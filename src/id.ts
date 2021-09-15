@@ -18,7 +18,7 @@ export interface IdConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id.html#keepers Id#keepers}
   */
-  readonly keepers?: { [key: string]: string };
+  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Arbitrary string to prefix the output value with. This string is supplied as-is, meaning it is not guaranteed to be URL-safe or base64 encoded.
   * 
@@ -31,6 +31,11 @@ export interface IdConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/random/r/id.html random_id}
 */
 export class Id extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "random_id";
 
   // ===========
   // INITIALIZER
@@ -102,11 +107,11 @@ export class Id extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string };
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
   public get keepers() {
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._keepers = value;
   }
   public resetKeepers() {

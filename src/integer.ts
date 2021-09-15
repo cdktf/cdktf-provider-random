@@ -12,7 +12,7 @@ export interface IntegerConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer.html#keepers Integer#keepers}
   */
-  readonly keepers?: { [key: string]: string };
+  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The maximum inclusive value of the range.
   * 
@@ -37,6 +37,11 @@ export interface IntegerConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/random/r/integer.html random_integer}
 */
 export class Integer extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "random_integer";
 
   // ===========
   // INITIALIZER
@@ -76,11 +81,11 @@ export class Integer extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string };
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
   public get keepers() {
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._keepers = value;
   }
   public resetKeepers() {

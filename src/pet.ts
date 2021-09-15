@@ -12,7 +12,7 @@ export interface PetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet.html#keepers Pet#keepers}
   */
-  readonly keepers?: { [key: string]: string };
+  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The length (in words) of the pet name.
   * 
@@ -37,6 +37,11 @@ export interface PetConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/random/r/pet.html random_pet}
 */
 export class Pet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "random_pet";
 
   // ===========
   // INITIALIZER
@@ -76,11 +81,11 @@ export class Pet extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string };
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
   public get keepers() {
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._keepers = value;
   }
   public resetKeepers() {

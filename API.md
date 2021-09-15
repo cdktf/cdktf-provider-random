@@ -93,7 +93,7 @@ public resetPrefix()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Id.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -111,7 +111,7 @@ public resetPrefix()
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -121,6 +121,13 @@ public resetPrefix()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.Id.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Integer <a name="@cdktf/provider-random.Integer"></a>
 
@@ -201,7 +208,7 @@ public resetSeed()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Integer.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -213,7 +220,7 @@ public resetSeed()
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -235,6 +242,13 @@ public resetSeed()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.Integer.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Password <a name="@cdktf/provider-random.Password"></a>
 
@@ -357,13 +371,13 @@ public resetUpper()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `lowerInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.lowerInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -393,7 +407,7 @@ public resetUpper()
 
 ##### `numberInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.numberInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -405,19 +419,19 @@ public resetUpper()
 
 ##### `specialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.specialInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `upperInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.upperInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -429,7 +443,7 @@ public resetUpper()
 
 ##### `lower`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.lower"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -459,7 +473,7 @@ public resetUpper()
 
 ##### `number`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.number"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -471,16 +485,23 @@ public resetUpper()
 
 ##### `special`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.special"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `upper`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.upper"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.Password.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Pet <a name="@cdktf/provider-random.Pet"></a>
 
@@ -555,7 +576,7 @@ public resetSeparator()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Pet.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -579,7 +600,7 @@ public resetSeparator()
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -601,6 +622,13 @@ public resetSeparator()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.Pet.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### RandomProvider <a name="@cdktf/provider-random.RandomProvider"></a>
 
@@ -661,6 +689,13 @@ public resetAlias()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.RandomProvider.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Shuffle <a name="@cdktf/provider-random.Shuffle"></a>
 
@@ -741,7 +776,7 @@ public resetSeed()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Shuffle.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -765,7 +800,7 @@ public resetSeed()
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -781,6 +816,13 @@ public resetSeed()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.Shuffle.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### String <a name="@cdktf/provider-random.String"></a>
 
@@ -903,13 +945,13 @@ public resetUpper()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `lowerInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.lowerInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -939,7 +981,7 @@ public resetUpper()
 
 ##### `numberInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.numberInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -951,19 +993,19 @@ public resetUpper()
 
 ##### `specialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.specialInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `upperInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.upperInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -975,7 +1017,7 @@ public resetUpper()
 
 ##### `lower`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.lower"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1005,7 +1047,7 @@ public resetUpper()
 
 ##### `number`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.number"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1017,16 +1059,23 @@ public resetUpper()
 
 ##### `special`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.special"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `upper`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.upper"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.String.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Uuid <a name="@cdktf/provider-random.Uuid"></a>
 
@@ -1089,16 +1138,23 @@ public resetKeepers()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Uuid.property.keepersInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Uuid.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-random.Uuid.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ## Structs <a name="Structs"></a>
 
@@ -1148,7 +1204,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`} | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1226,7 +1282,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1292,7 +1348,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1304,7 +1360,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `lower`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.lower"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include lowercase alphabet characters in the result.
 
@@ -1354,7 +1410,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `number`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.number"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include numeric characters in the result.
 
@@ -1376,7 +1432,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `special`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.special"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`.
 
@@ -1386,7 +1442,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `upper`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.upper"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include uppercase alphabet characters in the result.
 
@@ -1430,7 +1486,7 @@ const petConfig: PetConfig = { ... }
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1536,7 +1592,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1616,7 +1672,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1628,7 +1684,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `lower`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.lower"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include lowercase alphabet characters in the result.
 
@@ -1678,7 +1734,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `number`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.number"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include numeric characters in the result.
 
@@ -1700,7 +1756,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `special`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.special"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`.
 
@@ -1710,7 +1766,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `upper`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.upper"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include uppercase alphabet characters in the result.
 
@@ -1754,7 +1810,7 @@ const uuidConfig: UuidConfig = { ... }
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.keepers"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 

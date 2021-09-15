@@ -12,13 +12,18 @@ export interface UuidConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/uuid.html#keepers Uuid#keepers}
   */
-  readonly keepers?: { [key: string]: string };
+  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid.html random_uuid}
 */
 export class Uuid extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "random_uuid";
 
   // ===========
   // INITIALIZER
@@ -55,11 +60,11 @@ export class Uuid extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string };
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
   public get keepers() {
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._keepers = value;
   }
   public resetKeepers() {

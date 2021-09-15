@@ -12,7 +12,7 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password.html#keepers Password#keepers}
   */
-  readonly keepers?: { [key: string]: string };
+  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The length of the string desired.
   * 
@@ -24,7 +24,7 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password.html#lower Password#lower}
   */
-  readonly lower?: boolean;
+  readonly lower?: boolean | cdktf.IResolvable;
   /**
   * Minimum number of lowercase alphabet characters in the result.
   * 
@@ -54,7 +54,7 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password.html#number Password#number}
   */
-  readonly number?: boolean;
+  readonly number?: boolean | cdktf.IResolvable;
   /**
   * Supply your own list of special characters to use for string generation.  This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
   * 
@@ -66,19 +66,24 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password.html#special Password#special}
   */
-  readonly special?: boolean;
+  readonly special?: boolean | cdktf.IResolvable;
   /**
   * Include uppercase alphabet characters in the result.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password.html#upper Password#upper}
   */
-  readonly upper?: boolean;
+  readonly upper?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/random/r/password.html random_password}
 */
 export class Password extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "random_password";
 
   // ===========
   // INITIALIZER
@@ -125,11 +130,11 @@ export class Password extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string };
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
   public get keepers() {
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -154,11 +159,11 @@ export class Password extends cdktf.TerraformResource {
   }
 
   // lower - computed: false, optional: true, required: false
-  private _lower?: boolean;
+  private _lower?: boolean | cdktf.IResolvable;
   public get lower() {
     return this.getBooleanAttribute('lower');
   }
-  public set lower(value: boolean ) {
+  public set lower(value: boolean | cdktf.IResolvable ) {
     this._lower = value;
   }
   public resetLower() {
@@ -234,11 +239,11 @@ export class Password extends cdktf.TerraformResource {
   }
 
   // number - computed: false, optional: true, required: false
-  private _number?: boolean;
+  private _number?: boolean | cdktf.IResolvable;
   public get number() {
     return this.getBooleanAttribute('number');
   }
-  public set number(value: boolean ) {
+  public set number(value: boolean | cdktf.IResolvable ) {
     this._number = value;
   }
   public resetNumber() {
@@ -271,11 +276,11 @@ export class Password extends cdktf.TerraformResource {
   }
 
   // special - computed: false, optional: true, required: false
-  private _special?: boolean;
+  private _special?: boolean | cdktf.IResolvable;
   public get special() {
     return this.getBooleanAttribute('special');
   }
-  public set special(value: boolean ) {
+  public set special(value: boolean | cdktf.IResolvable ) {
     this._special = value;
   }
   public resetSpecial() {
@@ -287,11 +292,11 @@ export class Password extends cdktf.TerraformResource {
   }
 
   // upper - computed: false, optional: true, required: false
-  private _upper?: boolean;
+  private _upper?: boolean | cdktf.IResolvable;
   public get upper() {
     return this.getBooleanAttribute('upper');
   }
-  public set upper(value: boolean ) {
+  public set upper(value: boolean | cdktf.IResolvable ) {
     this._upper = value;
   }
   public resetUpper() {
