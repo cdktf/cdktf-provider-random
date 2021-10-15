@@ -6,7 +6,7 @@
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/id.html random_id}.
 
-#### Initializer <a name="@cdktf/provider-random.Id.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.Id.Initializer"></a>
 
 ```typescript
 import { Id } from '@cdktf/provider-random'
@@ -57,11 +57,19 @@ public resetPrefix()
 
 ##### `b64Std`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.b64Std"></a>
 
+```typescript
+public readonly b64Std: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `b64Url`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.b64Url"></a>
+
+```typescript
+public readonly b64Url: string;
+```
 
 - *Type:* `string`
 
@@ -69,11 +77,19 @@ public resetPrefix()
 
 ##### `byteLengthInput`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.byteLengthInput"></a>
 
+```typescript
+public readonly byteLengthInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dec`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.dec"></a>
+
+```typescript
+public readonly dec: string;
+```
 
 - *Type:* `string`
 
@@ -81,11 +97,19 @@ public resetPrefix()
 
 ##### `hex`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.hex"></a>
 
+```typescript
+public readonly hex: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -93,11 +117,19 @@ public resetPrefix()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Id.property.keepersInput"></a>
 
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `prefixInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Id.property.prefixInput"></a>
+
+```typescript
+public readonly prefixInput: string;
+```
 
 - *Type:* `string`
 
@@ -105,17 +137,29 @@ public resetPrefix()
 
 ##### `byteLength`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.byteLength"></a>
 
+```typescript
+public readonly byteLength: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.keepers"></a>
 
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `prefix`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.prefix"></a>
+
+```typescript
+public readonly prefix: string;
+```
 
 - *Type:* `string`
 
@@ -133,7 +177,7 @@ public resetPrefix()
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/integer.html random_integer}.
 
-#### Initializer <a name="@cdktf/provider-random.Integer.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.Integer.Initializer"></a>
 
 ```typescript
 import { Integer } from '@cdktf/provider-random'
@@ -184,11 +228,19 @@ public resetSeed()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `maxInput`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.maxInput"></a>
+
+```typescript
+public readonly maxInput: number;
+```
 
 - *Type:* `number`
 
@@ -196,11 +248,19 @@ public resetSeed()
 
 ##### `minInput`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.minInput"></a>
 
+```typescript
+public readonly minInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `result`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.result"></a>
+
+```typescript
+public readonly result: number;
+```
 
 - *Type:* `number`
 
@@ -208,11 +268,19 @@ public resetSeed()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Integer.property.keepersInput"></a>
 
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `seedInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Integer.property.seedInput"></a>
+
+```typescript
+public readonly seedInput: string;
+```
 
 - *Type:* `string`
 
@@ -220,11 +288,19 @@ public resetSeed()
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.keepers"></a>
 
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `max`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.max"></a>
+
+```typescript
+public readonly max: number;
+```
 
 - *Type:* `number`
 
@@ -232,11 +308,19 @@ public resetSeed()
 
 ##### `min`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.min"></a>
 
+```typescript
+public readonly min: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `seed`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.seed"></a>
+
+```typescript
+public readonly seed: string;
+```
 
 - *Type:* `string`
 
@@ -254,7 +338,7 @@ public resetSeed()
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/password.html random_password}.
 
-#### Initializer <a name="@cdktf/provider-random.Password.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.Password.Initializer"></a>
 
 ```typescript
 import { Password } from '@cdktf/provider-random'
@@ -353,11 +437,19 @@ public resetUpper()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `lengthInput`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.lengthInput"></a>
+
+```typescript
+public readonly lengthInput: number;
+```
 
 - *Type:* `number`
 
@@ -365,11 +457,19 @@ public resetUpper()
 
 ##### `result`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.result"></a>
 
+```typescript
+public readonly result: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.keepersInput"></a>
+
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -377,11 +477,19 @@ public resetUpper()
 
 ##### `lowerInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.lowerInput"></a>
 
+```typescript
+public readonly lowerInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `minLowerInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.minLowerInput"></a>
+
+```typescript
+public readonly minLowerInput: number;
+```
 
 - *Type:* `number`
 
@@ -389,11 +497,19 @@ public resetUpper()
 
 ##### `minNumericInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.minNumericInput"></a>
 
+```typescript
+public readonly minNumericInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `minSpecialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.minSpecialInput"></a>
+
+```typescript
+public readonly minSpecialInput: number;
+```
 
 - *Type:* `number`
 
@@ -401,11 +517,19 @@ public resetUpper()
 
 ##### `minUpperInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.minUpperInput"></a>
 
+```typescript
+public readonly minUpperInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `numberInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.numberInput"></a>
+
+```typescript
+public readonly numberInput: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -413,11 +537,19 @@ public resetUpper()
 
 ##### `overrideSpecialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.overrideSpecialInput"></a>
 
+```typescript
+public readonly overrideSpecialInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `specialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.specialInput"></a>
+
+```typescript
+public readonly specialInput: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -425,11 +557,19 @@ public resetUpper()
 
 ##### `upperInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.upperInput"></a>
 
+```typescript
+public readonly upperInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -437,11 +577,19 @@ public resetUpper()
 
 ##### `length`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.length"></a>
 
+```typescript
+public readonly length: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `lower`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.lower"></a>
+
+```typescript
+public readonly lower: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -449,11 +597,19 @@ public resetUpper()
 
 ##### `minLower`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.minLower"></a>
 
+```typescript
+public readonly minLower: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `minNumeric`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.minNumeric"></a>
+
+```typescript
+public readonly minNumeric: number;
+```
 
 - *Type:* `number`
 
@@ -461,11 +617,19 @@ public resetUpper()
 
 ##### `minSpecial`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.minSpecial"></a>
 
+```typescript
+public readonly minSpecial: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `minUpper`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.minUpper"></a>
+
+```typescript
+public readonly minUpper: number;
+```
 
 - *Type:* `number`
 
@@ -473,11 +637,19 @@ public resetUpper()
 
 ##### `number`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.number"></a>
 
+```typescript
+public readonly number: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `overrideSpecial`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.overrideSpecial"></a>
+
+```typescript
+public readonly overrideSpecial: string;
+```
 
 - *Type:* `string`
 
@@ -485,11 +657,19 @@ public resetUpper()
 
 ##### `special`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.special"></a>
 
+```typescript
+public readonly special: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `upper`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.upper"></a>
+
+```typescript
+public readonly upper: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -507,7 +687,7 @@ public resetUpper()
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/pet.html random_pet}.
 
-#### Initializer <a name="@cdktf/provider-random.Pet.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.Pet.Initializer"></a>
 
 ```typescript
 import { Pet } from '@cdktf/provider-random'
@@ -570,11 +750,19 @@ public resetSeparator()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Pet.property.keepersInput"></a>
+
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -582,11 +770,19 @@ public resetSeparator()
 
 ##### `lengthInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Pet.property.lengthInput"></a>
 
+```typescript
+public readonly lengthInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `prefixInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Pet.property.prefixInput"></a>
+
+```typescript
+public readonly prefixInput: string;
+```
 
 - *Type:* `string`
 
@@ -594,11 +790,19 @@ public resetSeparator()
 
 ##### `separatorInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Pet.property.separatorInput"></a>
 
+```typescript
+public readonly separatorInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -606,17 +810,29 @@ public resetSeparator()
 
 ##### `length`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.length"></a>
 
+```typescript
+public readonly length: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `prefix`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.prefix"></a>
 
+```typescript
+public readonly prefix: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `separator`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.separator"></a>
+
+```typescript
+public readonly separator: string;
+```
 
 - *Type:* `string`
 
@@ -634,7 +850,7 @@ public resetSeparator()
 
 Represents a {@link https://www.terraform.io/docs/providers/random random}.
 
-#### Initializer <a name="@cdktf/provider-random.RandomProvider.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.RandomProvider.Initializer"></a>
 
 ```typescript
 import { RandomProvider } from '@cdktf/provider-random'
@@ -679,11 +895,19 @@ public resetAlias()
 
 ##### `aliasInput`<sup>Optional</sup> <a name="@cdktf/provider-random.RandomProvider.property.aliasInput"></a>
 
+```typescript
+public readonly aliasInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `alias`<sup>Optional</sup> <a name="@cdktf/provider-random.RandomProvider.property.alias"></a>
+
+```typescript
+public readonly alias: string;
+```
 
 - *Type:* `string`
 
@@ -701,7 +925,7 @@ public resetAlias()
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/shuffle.html random_shuffle}.
 
-#### Initializer <a name="@cdktf/provider-random.Shuffle.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.Shuffle.Initializer"></a>
 
 ```typescript
 import { Shuffle } from '@cdktf/provider-random'
@@ -758,11 +982,19 @@ public resetSeed()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `inputInput`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.inputInput"></a>
+
+```typescript
+public readonly inputInput: string[];
+```
 
 - *Type:* `string`[]
 
@@ -770,11 +1002,19 @@ public resetSeed()
 
 ##### `result`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.result"></a>
 
+```typescript
+public readonly result: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Shuffle.property.keepersInput"></a>
+
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -782,11 +1022,19 @@ public resetSeed()
 
 ##### `resultCountInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Shuffle.property.resultCountInput"></a>
 
+```typescript
+public readonly resultCountInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `seedInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Shuffle.property.seedInput"></a>
+
+```typescript
+public readonly seedInput: string;
+```
 
 - *Type:* `string`
 
@@ -794,11 +1042,19 @@ public resetSeed()
 
 ##### `input`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.input"></a>
 
+```typescript
+public readonly input: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -806,11 +1062,19 @@ public resetSeed()
 
 ##### `resultCount`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.resultCount"></a>
 
+```typescript
+public readonly resultCount: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `seed`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.seed"></a>
+
+```typescript
+public readonly seed: string;
+```
 
 - *Type:* `string`
 
@@ -828,7 +1092,7 @@ public resetSeed()
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/string.html random_string}.
 
-#### Initializer <a name="@cdktf/provider-random.String.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.String.Initializer"></a>
 
 ```typescript
 import { String } from '@cdktf/provider-random'
@@ -927,11 +1191,19 @@ public resetUpper()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `lengthInput`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.lengthInput"></a>
+
+```typescript
+public readonly lengthInput: number;
+```
 
 - *Type:* `number`
 
@@ -939,11 +1211,19 @@ public resetUpper()
 
 ##### `result`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.result"></a>
 
+```typescript
+public readonly result: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.keepersInput"></a>
+
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -951,11 +1231,19 @@ public resetUpper()
 
 ##### `lowerInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.lowerInput"></a>
 
+```typescript
+public readonly lowerInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `minLowerInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.minLowerInput"></a>
+
+```typescript
+public readonly minLowerInput: number;
+```
 
 - *Type:* `number`
 
@@ -963,11 +1251,19 @@ public resetUpper()
 
 ##### `minNumericInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.minNumericInput"></a>
 
+```typescript
+public readonly minNumericInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `minSpecialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.minSpecialInput"></a>
+
+```typescript
+public readonly minSpecialInput: number;
+```
 
 - *Type:* `number`
 
@@ -975,11 +1271,19 @@ public resetUpper()
 
 ##### `minUpperInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.minUpperInput"></a>
 
+```typescript
+public readonly minUpperInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `numberInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.numberInput"></a>
+
+```typescript
+public readonly numberInput: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -987,11 +1291,19 @@ public resetUpper()
 
 ##### `overrideSpecialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.overrideSpecialInput"></a>
 
+```typescript
+public readonly overrideSpecialInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `specialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.specialInput"></a>
+
+```typescript
+public readonly specialInput: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -999,11 +1311,19 @@ public resetUpper()
 
 ##### `upperInput`<sup>Optional</sup> <a name="@cdktf/provider-random.String.property.upperInput"></a>
 
+```typescript
+public readonly upperInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1011,11 +1331,19 @@ public resetUpper()
 
 ##### `length`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.length"></a>
 
+```typescript
+public readonly length: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `lower`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.lower"></a>
+
+```typescript
+public readonly lower: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1023,11 +1351,19 @@ public resetUpper()
 
 ##### `minLower`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.minLower"></a>
 
+```typescript
+public readonly minLower: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `minNumeric`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.minNumeric"></a>
+
+```typescript
+public readonly minNumeric: number;
+```
 
 - *Type:* `number`
 
@@ -1035,11 +1371,19 @@ public resetUpper()
 
 ##### `minSpecial`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.minSpecial"></a>
 
+```typescript
+public readonly minSpecial: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `minUpper`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.minUpper"></a>
+
+```typescript
+public readonly minUpper: number;
+```
 
 - *Type:* `number`
 
@@ -1047,11 +1391,19 @@ public resetUpper()
 
 ##### `number`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.number"></a>
 
+```typescript
+public readonly number: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `overrideSpecial`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.overrideSpecial"></a>
+
+```typescript
+public readonly overrideSpecial: string;
+```
 
 - *Type:* `string`
 
@@ -1059,11 +1411,19 @@ public resetUpper()
 
 ##### `special`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.special"></a>
 
+```typescript
+public readonly special: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `upper`<sup>Required</sup> <a name="@cdktf/provider-random.String.property.upper"></a>
+
+```typescript
+public readonly upper: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1081,7 +1441,7 @@ public resetUpper()
 
 Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid.html random_uuid}.
 
-#### Initializer <a name="@cdktf/provider-random.Uuid.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-random.Uuid.Initializer"></a>
 
 ```typescript
 import { Uuid } from '@cdktf/provider-random'
@@ -1126,11 +1486,19 @@ public resetKeepers()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Uuid.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `result`<sup>Required</sup> <a name="@cdktf/provider-random.Uuid.property.result"></a>
+
+```typescript
+public readonly result: string;
+```
 
 - *Type:* `string`
 
@@ -1138,11 +1506,19 @@ public resetKeepers()
 
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Uuid.property.keepersInput"></a>
 
+```typescript
+public readonly keepersInput: IResolvable | {[ key: string ]: string};
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Uuid.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1170,11 +1546,19 @@ const idConfig: IdConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1182,17 +1566,29 @@ const idConfig: IdConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `byteLength`<sup>Required</sup> <a name="@cdktf/provider-random.IdConfig.property.byteLength"></a>
+
+```typescript
+public readonly byteLength: number;
+```
 
 - *Type:* `number`
 
@@ -1203,6 +1599,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: {[ key: string ]: string} | IResolvable;
+```
 
 - *Type:* {[ key: string ]: `string`} | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1215,6 +1615,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `prefix`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.prefix"></a>
+
+```typescript
+public readonly prefix: string;
+```
 
 - *Type:* `string`
 
@@ -1238,11 +1642,19 @@ const integerConfig: IntegerConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1250,17 +1662,29 @@ const integerConfig: IntegerConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `max`<sup>Required</sup> <a name="@cdktf/provider-random.IntegerConfig.property.max"></a>
+
+```typescript
+public readonly max: number;
+```
 
 - *Type:* `number`
 
@@ -1272,6 +1696,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `min`<sup>Required</sup> <a name="@cdktf/provider-random.IntegerConfig.property.min"></a>
 
+```typescript
+public readonly min: number;
+```
+
 - *Type:* `number`
 
 The minimum inclusive value of the range.
@@ -1281,6 +1709,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1293,6 +1725,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `seed`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.seed"></a>
+
+```typescript
+public readonly seed: string;
+```
 
 - *Type:* `string`
 
@@ -1314,11 +1750,19 @@ const passwordConfig: PasswordConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1326,17 +1770,29 @@ const passwordConfig: PasswordConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `length`<sup>Required</sup> <a name="@cdktf/provider-random.PasswordConfig.property.length"></a>
+
+```typescript
+public readonly length: number;
+```
 
 - *Type:* `number`
 
@@ -1347,6 +1803,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1360,6 +1820,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `lower`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.lower"></a>
 
+```typescript
+public readonly lower: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include lowercase alphabet characters in the result.
@@ -1369,6 +1833,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `minLower`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.minLower"></a>
+
+```typescript
+public readonly minLower: number;
+```
 
 - *Type:* `number`
 
@@ -1380,6 +1848,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `minNumeric`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.minNumeric"></a>
 
+```typescript
+public readonly minNumeric: number;
+```
+
 - *Type:* `number`
 
 Minimum number of numeric characters in the result.
@@ -1389,6 +1861,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `minSpecial`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.minSpecial"></a>
+
+```typescript
+public readonly minSpecial: number;
+```
 
 - *Type:* `number`
 
@@ -1400,6 +1876,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `minUpper`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.minUpper"></a>
 
+```typescript
+public readonly minUpper: number;
+```
+
 - *Type:* `number`
 
 Minimum number of uppercase alphabet characters in the result.
@@ -1410,6 +1890,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `number`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.number"></a>
 
+```typescript
+public readonly number: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include numeric characters in the result.
@@ -1419,6 +1903,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `overrideSpecial`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.overrideSpecial"></a>
+
+```typescript
+public readonly overrideSpecial: string;
+```
 
 - *Type:* `string`
 
@@ -1432,6 +1920,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `special`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.special"></a>
 
+```typescript
+public readonly special: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`.
@@ -1441,6 +1933,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `upper`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.upper"></a>
+
+```typescript
+public readonly upper: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1462,11 +1958,19 @@ const petConfig: PetConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1474,17 +1978,29 @@ const petConfig: PetConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1498,6 +2014,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `length`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.length"></a>
 
+```typescript
+public readonly length: number;
+```
+
 - *Type:* `number`
 
 The length (in words) of the pet name.
@@ -1508,6 +2028,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `prefix`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.prefix"></a>
 
+```typescript
+public readonly prefix: string;
+```
+
 - *Type:* `string`
 
 A string to prefix the name with.
@@ -1517,6 +2041,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `separator`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.separator"></a>
+
+```typescript
+public readonly separator: string;
+```
 
 - *Type:* `string`
 
@@ -1538,6 +2066,10 @@ const randomProviderConfig: RandomProviderConfig = { ... }
 
 ##### `alias`<sup>Optional</sup> <a name="@cdktf/provider-random.RandomProviderConfig.property.alias"></a>
 
+```typescript
+public readonly alias: string;
+```
+
 - *Type:* `string`
 
 Alias name.
@@ -1558,11 +2090,19 @@ const shuffleConfig: ShuffleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1570,17 +2110,29 @@ const shuffleConfig: ShuffleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `input`<sup>Required</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.input"></a>
+
+```typescript
+public readonly input: string[];
+```
 
 - *Type:* `string`[]
 
@@ -1591,6 +2143,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1604,6 +2160,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `resultCount`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.resultCount"></a>
 
+```typescript
+public readonly resultCount: number;
+```
+
 - *Type:* `number`
 
 The number of results to return.
@@ -1615,6 +2175,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `seed`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.seed"></a>
+
+```typescript
+public readonly seed: string;
+```
 
 - *Type:* `string`
 
@@ -1638,11 +2202,19 @@ const stringConfig: StringConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1650,17 +2222,29 @@ const stringConfig: StringConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `length`<sup>Required</sup> <a name="@cdktf/provider-random.StringConfig.property.length"></a>
+
+```typescript
+public readonly length: number;
+```
 
 - *Type:* `number`
 
@@ -1671,6 +2255,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -1684,6 +2272,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `lower`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.lower"></a>
 
+```typescript
+public readonly lower: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include lowercase alphabet characters in the result.
@@ -1693,6 +2285,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `minLower`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.minLower"></a>
+
+```typescript
+public readonly minLower: number;
+```
 
 - *Type:* `number`
 
@@ -1704,6 +2300,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `minNumeric`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.minNumeric"></a>
 
+```typescript
+public readonly minNumeric: number;
+```
+
 - *Type:* `number`
 
 Minimum number of numeric characters in the result.
@@ -1713,6 +2313,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `minSpecial`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.minSpecial"></a>
+
+```typescript
+public readonly minSpecial: number;
+```
 
 - *Type:* `number`
 
@@ -1724,6 +2328,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `minUpper`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.minUpper"></a>
 
+```typescript
+public readonly minUpper: number;
+```
+
 - *Type:* `number`
 
 Minimum number of uppercase alphabet characters in the result.
@@ -1734,6 +2342,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `number`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.number"></a>
 
+```typescript
+public readonly number: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include numeric characters in the result.
@@ -1743,6 +2355,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `overrideSpecial`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.overrideSpecial"></a>
+
+```typescript
+public readonly overrideSpecial: string;
+```
 
 - *Type:* `string`
 
@@ -1756,6 +2372,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 ##### `special`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.special"></a>
 
+```typescript
+public readonly special: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`.
@@ -1765,6 +2385,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ---
 
 ##### `upper`<sup>Optional</sup> <a name="@cdktf/provider-random.StringConfig.property.upper"></a>
+
+```typescript
+public readonly upper: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1786,11 +2410,19 @@ const uuidConfig: UuidConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -1798,17 +2430,29 @@ const uuidConfig: UuidConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.keepers"></a>
+
+```typescript
+public readonly keepers: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
