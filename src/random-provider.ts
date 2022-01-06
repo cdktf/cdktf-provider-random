@@ -53,11 +53,11 @@ export class RandomProvider extends cdktf.TerraformProvider {
   // ==========
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string;
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string  | undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -65,7 +65,7 @@ export class RandomProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // =========

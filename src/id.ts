@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/id.html
+// https://www.terraform.io/docs/providers/random/r/id
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface IdConfig extends cdktf.TerraformMetaArguments {
   /**
   * The number of random bytes to produce. The minimum value is 1, which produces eight bits of randomness.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id.html#byte_length Id#byte_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id#byte_length Id#byte_length}
   */
   readonly byteLength: number;
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id.html#keepers Id#keepers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id#keepers Id#keepers}
   */
   readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Arbitrary string to prefix the output value with. This string is supplied as-is, meaning it is not guaranteed to be URL-safe or base64 encoded.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id.html#prefix Id#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/id#prefix Id#prefix}
   */
   readonly prefix?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/id.html random_id}
+* Represents a {@link https://www.terraform.io/docs/providers/random/r/id random_id}
 */
 export class Id extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class Id extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/id.html random_id} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/random/r/id random_id} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class Id extends cdktf.TerraformResource {
   }
 
   // byte_length - computed: false, optional: false, required: true
-  private _byteLength: number;
+  private _byteLength?: number; 
   public get byteLength() {
     return this.getNumberAttribute('byte_length');
   }
@@ -88,7 +88,7 @@ export class Id extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get byteLengthInput() {
-    return this._byteLength
+    return this._byteLength;
   }
 
   // dec - computed: true, optional: false, required: false
@@ -107,11 +107,12 @@ export class Id extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
   public get keepers() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -119,15 +120,15 @@ export class Id extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keepersInput() {
-    return this._keepers
+    return this._keepers;
   }
 
   // prefix - computed: false, optional: true, required: false
-  private _prefix?: string;
+  private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
   }
-  public set prefix(value: string ) {
+  public set prefix(value: string) {
     this._prefix = value;
   }
   public resetPrefix() {
@@ -135,7 +136,7 @@ export class Id extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
-    return this._prefix
+    return this._prefix;
   }
 
   // =========

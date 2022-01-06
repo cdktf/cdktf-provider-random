@@ -4,7 +4,7 @@ export * from './integer';
 export * from './password';
 export * from './pet';
 export * from './shuffle';
-export * from './string';
+export * from './string-resource';
 export * from './uuid';
 export * from './random-provider';
 
