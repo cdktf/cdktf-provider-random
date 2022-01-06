@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/uuid.html
+// https://www.terraform.io/docs/providers/random/r/uuid
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface UuidConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/uuid.html#keepers Uuid#keepers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/uuid#keepers Uuid#keepers}
   */
   readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid.html random_uuid}
+* Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid random_uuid}
 */
 export class Uuid extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class Uuid extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/uuid.html random_uuid} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/random/r/uuid random_uuid} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,11 +60,12 @@ export class Uuid extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
   public get keepers() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -72,7 +73,7 @@ export class Uuid extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keepersInput() {
-    return this._keepers
+    return this._keepers;
   }
 
   // result - computed: true, optional: false, required: false

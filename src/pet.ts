@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/pet.html
+// https://www.terraform.io/docs/providers/random/r/pet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface PetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet.html#keepers Pet#keepers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#keepers Pet#keepers}
   */
   readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The length (in words) of the pet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet.html#length Pet#length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#length Pet#length}
   */
   readonly length?: number;
   /**
   * A string to prefix the name with.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet.html#prefix Pet#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#prefix Pet#prefix}
   */
   readonly prefix?: string;
   /**
   * The character to separate words in the pet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet.html#separator Pet#separator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#separator Pet#separator}
   */
   readonly separator?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/pet.html random_pet}
+* Represents a {@link https://www.terraform.io/docs/providers/random/r/pet random_pet}
 */
 export class Pet extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Pet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/pet.html random_pet} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/random/r/pet random_pet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,11 +81,12 @@ export class Pet extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
   public get keepers() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -93,15 +94,15 @@ export class Pet extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keepersInput() {
-    return this._keepers
+    return this._keepers;
   }
 
   // length - computed: false, optional: true, required: false
-  private _length?: number;
+  private _length?: number; 
   public get length() {
     return this.getNumberAttribute('length');
   }
-  public set length(value: number ) {
+  public set length(value: number) {
     this._length = value;
   }
   public resetLength() {
@@ -109,15 +110,15 @@ export class Pet extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lengthInput() {
-    return this._length
+    return this._length;
   }
 
   // prefix - computed: false, optional: true, required: false
-  private _prefix?: string;
+  private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
   }
-  public set prefix(value: string ) {
+  public set prefix(value: string) {
     this._prefix = value;
   }
   public resetPrefix() {
@@ -125,15 +126,15 @@ export class Pet extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
-    return this._prefix
+    return this._prefix;
   }
 
   // separator - computed: false, optional: true, required: false
-  private _separator?: string;
+  private _separator?: string; 
   public get separator() {
     return this.getStringAttribute('separator');
   }
-  public set separator(value: string ) {
+  public set separator(value: string) {
     this._separator = value;
   }
   public resetSeparator() {
@@ -141,7 +142,7 @@ export class Pet extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get separatorInput() {
-    return this._separator
+    return this._separator;
   }
 
   // =========

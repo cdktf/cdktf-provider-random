@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/integer.html
+// https://www.terraform.io/docs/providers/random/r/integer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface IntegerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer.html#keepers Integer#keepers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#keepers Integer#keepers}
   */
   readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The maximum inclusive value of the range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer.html#max Integer#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#max Integer#max}
   */
   readonly max: number;
   /**
   * The minimum inclusive value of the range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer.html#min Integer#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#min Integer#min}
   */
   readonly min: number;
   /**
   * A custom seed to always produce the same value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer.html#seed Integer#seed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#seed Integer#seed}
   */
   readonly seed?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/integer.html random_integer}
+* Represents a {@link https://www.terraform.io/docs/providers/random/r/integer random_integer}
 */
 export class Integer extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Integer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/integer.html random_integer} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/random/r/integer random_integer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,11 +81,12 @@ export class Integer extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
   public get keepers() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -93,11 +94,11 @@ export class Integer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keepersInput() {
-    return this._keepers
+    return this._keepers;
   }
 
   // max - computed: false, optional: false, required: true
-  private _max: number;
+  private _max?: number; 
   public get max() {
     return this.getNumberAttribute('max');
   }
@@ -106,11 +107,11 @@ export class Integer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maxInput() {
-    return this._max
+    return this._max;
   }
 
   // min - computed: false, optional: false, required: true
-  private _min: number;
+  private _min?: number; 
   public get min() {
     return this.getNumberAttribute('min');
   }
@@ -119,7 +120,7 @@ export class Integer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get minInput() {
-    return this._min
+    return this._min;
   }
 
   // result - computed: true, optional: false, required: false
@@ -128,11 +129,11 @@ export class Integer extends cdktf.TerraformResource {
   }
 
   // seed - computed: false, optional: true, required: false
-  private _seed?: string;
+  private _seed?: string; 
   public get seed() {
     return this.getStringAttribute('seed');
   }
-  public set seed(value: string ) {
+  public set seed(value: string) {
     this._seed = value;
   }
   public resetSeed() {
@@ -140,7 +141,7 @@ export class Integer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get seedInput() {
-    return this._seed
+    return this._seed;
   }
 
   // =========

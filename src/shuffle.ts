@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/shuffle.html
+// https://www.terraform.io/docs/providers/random/r/shuffle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface ShuffleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The list of strings to shuffle.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle.html#input Shuffle#input}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#input Shuffle#input}
   */
   readonly input: string[];
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle.html#keepers Shuffle#keepers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#keepers Shuffle#keepers}
   */
   readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The number of results to return. Defaults to the number of items in the `input` list. If fewer items are requested, some elements will be excluded from the result. If more items are requested, items will be repeated in the result but not more frequently than the number of items in the input list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle.html#result_count Shuffle#result_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#result_count Shuffle#result_count}
   */
   readonly resultCount?: number;
   /**
@@ -30,13 +30,13 @@ export interface ShuffleConfig extends cdktf.TerraformMetaArguments {
 
 **Important:** Even with an identical seed, it is not guaranteed that the same permutation will be produced across different versions of Terraform. This argument causes the result to be *less volatile*, but not fixed for all time.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle.html#seed Shuffle#seed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#seed Shuffle#seed}
   */
   readonly seed?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/shuffle.html random_shuffle}
+* Represents a {@link https://www.terraform.io/docs/providers/random/r/shuffle random_shuffle}
 */
 export class Shuffle extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class Shuffle extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/shuffle.html random_shuffle} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/random/r/shuffle random_shuffle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class Shuffle extends cdktf.TerraformResource {
   }
 
   // input - computed: false, optional: false, required: true
-  private _input: string[];
+  private _input?: string[]; 
   public get input() {
     return this.getListAttribute('input');
   }
@@ -92,15 +92,16 @@ export class Shuffle extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get inputInput() {
-    return this._input
+    return this._input;
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable;
+  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
   public get keepers() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('keepers') as any;
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -108,7 +109,7 @@ export class Shuffle extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keepersInput() {
-    return this._keepers
+    return this._keepers;
   }
 
   // result - computed: true, optional: false, required: false
@@ -117,11 +118,11 @@ export class Shuffle extends cdktf.TerraformResource {
   }
 
   // result_count - computed: false, optional: true, required: false
-  private _resultCount?: number;
+  private _resultCount?: number; 
   public get resultCount() {
     return this.getNumberAttribute('result_count');
   }
-  public set resultCount(value: number ) {
+  public set resultCount(value: number) {
     this._resultCount = value;
   }
   public resetResultCount() {
@@ -129,15 +130,15 @@ export class Shuffle extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resultCountInput() {
-    return this._resultCount
+    return this._resultCount;
   }
 
   // seed - computed: false, optional: true, required: false
-  private _seed?: string;
+  private _seed?: string; 
   public get seed() {
     return this.getStringAttribute('seed');
   }
-  public set seed(value: string ) {
+  public set seed(value: string) {
     this._seed = value;
   }
   public resetSeed() {
@@ -145,7 +146,7 @@ export class Shuffle extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get seedInput() {
-    return this._seed
+    return this._seed;
   }
 
   // =========
