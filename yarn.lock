@@ -901,6 +901,11 @@ constant-case@^3.0.4:
     tslib "^2.0.3"
     upper-case "^2.0.2"
 
+constructs@^10.0.0:
+  version "10.0.27"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.27.tgz#0f158fdc5638b4a3ac22e360e4cf4d9f5513f1a4"
+  integrity sha512-XIfg8vL/OPvGi8owc2BpCoZCt/yeJafLtuQHxyUVYdyGbQOG/1BWXvq87yFPpNKJ2moaPcJp0mPNPFM0QTyzSw==
+
 constructs@^10.0.25:
   version "10.0.26"
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.26.tgz#4447f0f8bd3e4b4104b17b1f4ed37c2be63ee290"
@@ -3236,10 +3241,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.50.9:
-  version "0.50.9"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.50.9.tgz#66e24d010ac3bcebf5f212fa2a885ba66a6f0f22"
-  integrity sha512-ZEpoPxFrV2LsrSxCl9iA2x9kBFIWBUsCCgfAZPjP6JUvkMQYR3xYn9FS6Fcv60FZ1e7pRfpp6L7DE7cJZ3j9CQ==
+projen@^0.50.11:
+  version "0.50.11"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.50.11.tgz#adc765bd2165d9b78ac9c145471a72d9da4e1688"
+  integrity sha512-GGJD3H4ozAGCGVB0L7HNlpQOiY/sKFKwguEMG3+75QnooDMGebBRA9TJITtBvdSgsteUO5XGSeR0hJLkTBE+IQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
