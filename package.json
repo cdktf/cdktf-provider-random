@@ -46,7 +46,7 @@
     "cdktf-cli": "^0.8",
     "constructs": "^10.0.25",
     "dot-prop": "^5.2.0",
-    "jsii": "^1.49.0",
+    "jsii": "^1.46.0",
     "jsii-diff": "^1.49.0",
     "jsii-docgen": "^3.8.31",
     "npm-check-updates": "^12",

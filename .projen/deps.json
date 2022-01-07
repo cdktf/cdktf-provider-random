@@ -31,15 +31,16 @@
       "type": "build"
     },
     {
-      "name": "jsii",
-      "type": "build"
-    },
-    {
       "name": "jsii-diff",
       "type": "build"
     },
     {
       "name": "jsii-docgen",
+      "type": "build"
+    },
+    {
+      "name": "jsii",
+      "version": "^1.46.0",
       "type": "build"
     },
     {
