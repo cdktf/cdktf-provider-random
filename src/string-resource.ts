@@ -12,7 +12,7 @@ export interface StringResourceConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#keepers StringResource#keepers}
   */
-  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
+  readonly keepers?: { [key: string]: string };
   /**
   * The length of the string desired.
   * 
@@ -130,12 +130,11 @@ export class StringResource extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
+  private _keepers?: { [key: string]: string }; 
   public get keepers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('keepers') as any;
+    return this.getStringMapAttribute('keepers');
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set keepers(value: { [key: string]: string }) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -162,7 +161,7 @@ export class StringResource extends cdktf.TerraformResource {
   // lower - computed: false, optional: true, required: false
   private _lower?: boolean | cdktf.IResolvable; 
   public get lower() {
-    return this.getBooleanAttribute('lower') as any;
+    return this.getBooleanAttribute('lower');
   }
   public set lower(value: boolean | cdktf.IResolvable) {
     this._lower = value;
@@ -242,7 +241,7 @@ export class StringResource extends cdktf.TerraformResource {
   // number - computed: false, optional: true, required: false
   private _number?: boolean | cdktf.IResolvable; 
   public get number() {
-    return this.getBooleanAttribute('number') as any;
+    return this.getBooleanAttribute('number');
   }
   public set number(value: boolean | cdktf.IResolvable) {
     this._number = value;
@@ -279,7 +278,7 @@ export class StringResource extends cdktf.TerraformResource {
   // special - computed: false, optional: true, required: false
   private _special?: boolean | cdktf.IResolvable; 
   public get special() {
-    return this.getBooleanAttribute('special') as any;
+    return this.getBooleanAttribute('special');
   }
   public set special(value: boolean | cdktf.IResolvable) {
     this._special = value;
@@ -295,7 +294,7 @@ export class StringResource extends cdktf.TerraformResource {
   // upper - computed: false, optional: true, required: false
   private _upper?: boolean | cdktf.IResolvable; 
   public get upper() {
-    return this.getBooleanAttribute('upper') as any;
+    return this.getBooleanAttribute('upper');
   }
   public set upper(value: boolean | cdktf.IResolvable) {
     this._upper = value;
@@ -314,7 +313,7 @@ export class StringResource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      keepers: cdktf.hashMapper(cdktf.anyToTerraform)(this._keepers),
+      keepers: cdktf.hashMapper(cdktf.stringToTerraform)(this._keepers),
       length: cdktf.numberToTerraform(this._length),
       lower: cdktf.booleanToTerraform(this._lower),
       min_lower: cdktf.numberToTerraform(this._minLower),
