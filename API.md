@@ -118,10 +118,10 @@ public readonly byteLengthInput: number;
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Id.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -148,10 +148,10 @@ public readonly byteLength: number;
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Id.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -249,10 +249,10 @@ public readonly result: number;
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Integer.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -289,10 +289,10 @@ public readonly seedInput: string;
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Integer.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -458,10 +458,10 @@ public readonly result: string;
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -568,10 +568,10 @@ public readonly upperInput: boolean | IResolvable;
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -761,10 +761,10 @@ public readonly id: string;
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Pet.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -801,10 +801,10 @@ public readonly separatorInput: string;
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Pet.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1013,10 +1013,10 @@ public readonly inputInput: string[];
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Shuffle.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1053,10 +1053,10 @@ public readonly input: string[];
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Shuffle.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1212,10 +1212,10 @@ public readonly result: string;
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResource.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1322,10 +1322,10 @@ public readonly upperInput: boolean | IResolvable;
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.StringResource.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1507,20 +1507,20 @@ public readonly result: string;
 ##### `keepersInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Uuid.property.keepersInput"></a>
 
 ```typescript
-public readonly keepersInput: IResolvable | {[ key: string ]: string};
+public readonly keepersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `keepers`<sup>Required</sup> <a name="@cdktf/provider-random.Uuid.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1547,10 +1547,10 @@ const idConfig: IdConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -1601,10 +1601,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: {[ key: string ]: string} | IResolvable;
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* {[ key: string ]: `string`} | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1643,10 +1643,10 @@ const integerConfig: IntegerConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -1711,10 +1711,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1751,10 +1751,10 @@ const passwordConfig: PasswordConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -1805,10 +1805,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -1959,10 +1959,10 @@ const petConfig: PetConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -1999,10 +1999,10 @@ public readonly provider: TerraformProvider;
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -2091,10 +2091,10 @@ const shuffleConfig: ShuffleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -2145,10 +2145,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -2203,10 +2203,10 @@ const stringResourceConfig: StringResourceConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -2257,10 +2257,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 
@@ -2411,10 +2411,10 @@ const uuidConfig: UuidConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -2451,10 +2451,10 @@ public readonly provider: TerraformProvider;
 ##### `keepers`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.keepers"></a>
 
 ```typescript
-public readonly keepers: IResolvable | {[ key: string ]: string};
+public readonly keepers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger recreation of resource.
 

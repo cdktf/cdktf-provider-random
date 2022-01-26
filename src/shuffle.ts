@@ -18,7 +18,7 @@ export interface ShuffleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#keepers Shuffle#keepers}
   */
-  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
+  readonly keepers?: { [key: string]: string };
   /**
   * The number of results to return. Defaults to the number of items in the `input` list. If fewer items are requested, some elements will be excluded from the result. If more items are requested, items will be repeated in the result but not more frequently than the number of items in the input list.
   * 
@@ -96,12 +96,11 @@ export class Shuffle extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
+  private _keepers?: { [key: string]: string }; 
   public get keepers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('keepers') as any;
+    return this.getStringMapAttribute('keepers');
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set keepers(value: { [key: string]: string }) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -156,7 +155,7 @@ export class Shuffle extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       input: cdktf.listMapper(cdktf.stringToTerraform)(this._input),
-      keepers: cdktf.hashMapper(cdktf.anyToTerraform)(this._keepers),
+      keepers: cdktf.hashMapper(cdktf.stringToTerraform)(this._keepers),
       result_count: cdktf.numberToTerraform(this._resultCount),
       seed: cdktf.stringToTerraform(this._seed),
     };

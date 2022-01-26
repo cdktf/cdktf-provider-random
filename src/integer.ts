@@ -12,7 +12,7 @@ export interface IntegerConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#keepers Integer#keepers}
   */
-  readonly keepers?: { [key: string]: string } | cdktf.IResolvable;
+  readonly keepers?: { [key: string]: string };
   /**
   * The maximum inclusive value of the range.
   * 
@@ -81,12 +81,11 @@ export class Integer extends cdktf.TerraformResource {
   }
 
   // keepers - computed: false, optional: true, required: false
-  private _keepers?: { [key: string]: string } | cdktf.IResolvable; 
+  private _keepers?: { [key: string]: string }; 
   public get keepers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('keepers') as any;
+    return this.getStringMapAttribute('keepers');
   }
-  public set keepers(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set keepers(value: { [key: string]: string }) {
     this._keepers = value;
   }
   public resetKeepers() {
@@ -150,7 +149,7 @@ export class Integer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      keepers: cdktf.hashMapper(cdktf.anyToTerraform)(this._keepers),
+      keepers: cdktf.hashMapper(cdktf.stringToTerraform)(this._keepers),
       max: cdktf.numberToTerraform(this._max),
       min: cdktf.numberToTerraform(this._min),
       seed: cdktf.stringToTerraform(this._seed),
