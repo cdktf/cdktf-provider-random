@@ -1826,7 +1826,7 @@ public readonly lower: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include lowercase alphabet characters in the result.
+Include lowercase alphabet characters in the result. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#lower Password#lower}
 
@@ -1840,7 +1840,7 @@ public readonly minLower: number;
 
 - *Type:* `number`
 
-Minimum number of lowercase alphabet characters in the result.
+Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_lower Password#min_lower}
 
@@ -1854,7 +1854,7 @@ public readonly minNumeric: number;
 
 - *Type:* `number`
 
-Minimum number of numeric characters in the result.
+Minimum number of numeric characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_numeric Password#min_numeric}
 
@@ -1868,7 +1868,7 @@ public readonly minSpecial: number;
 
 - *Type:* `number`
 
-Minimum number of special characters in the result.
+Minimum number of special characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_special Password#min_special}
 
@@ -1882,7 +1882,7 @@ public readonly minUpper: number;
 
 - *Type:* `number`
 
-Minimum number of uppercase alphabet characters in the result.
+Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_upper Password#min_upper}
 
@@ -1896,7 +1896,7 @@ public readonly number: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include numeric characters in the result.
+Include numeric characters in the result. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#number Password#number}
 
@@ -1926,7 +1926,7 @@ public readonly special: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`.
+Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#special Password#special}
 
@@ -1940,7 +1940,7 @@ public readonly upper: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include uppercase alphabet characters in the result.
+Include uppercase alphabet characters in the result. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#upper Password#upper}
 
@@ -2278,7 +2278,7 @@ public readonly lower: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include lowercase alphabet characters in the result.
+Include lowercase alphabet characters in the result. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#lower StringResource#lower}
 
@@ -2292,7 +2292,7 @@ public readonly minLower: number;
 
 - *Type:* `number`
 
-Minimum number of lowercase alphabet characters in the result.
+Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#min_lower StringResource#min_lower}
 
@@ -2306,7 +2306,7 @@ public readonly minNumeric: number;
 
 - *Type:* `number`
 
-Minimum number of numeric characters in the result.
+Minimum number of numeric characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#min_numeric StringResource#min_numeric}
 
@@ -2320,7 +2320,7 @@ public readonly minSpecial: number;
 
 - *Type:* `number`
 
-Minimum number of special characters in the result.
+Minimum number of special characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#min_special StringResource#min_special}
 
@@ -2334,7 +2334,7 @@ public readonly minUpper: number;
 
 - *Type:* `number`
 
-Minimum number of uppercase alphabet characters in the result.
+Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#min_upper StringResource#min_upper}
 
@@ -2348,7 +2348,7 @@ public readonly number: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include numeric characters in the result.
+Include numeric characters in the result. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#number StringResource#number}
 
@@ -2378,7 +2378,7 @@ public readonly special: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`.
+Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#special StringResource#special}
 
@@ -2392,7 +2392,7 @@ public readonly upper: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include uppercase alphabet characters in the result.
+Include uppercase alphabet characters in the result. Default value is `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#upper StringResource#upper}
 
