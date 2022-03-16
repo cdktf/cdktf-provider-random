@@ -20,37 +20,37 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly length: number;
   /**
-  * Include lowercase alphabet characters in the result.
+  * Include lowercase alphabet characters in the result. Default value is `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#lower Password#lower}
   */
   readonly lower?: boolean | cdktf.IResolvable;
   /**
-  * Minimum number of lowercase alphabet characters in the result.
+  * Minimum number of lowercase alphabet characters in the result. Default value is `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_lower Password#min_lower}
   */
   readonly minLower?: number;
   /**
-  * Minimum number of numeric characters in the result.
+  * Minimum number of numeric characters in the result. Default value is `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_numeric Password#min_numeric}
   */
   readonly minNumeric?: number;
   /**
-  * Minimum number of special characters in the result.
+  * Minimum number of special characters in the result. Default value is `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_special Password#min_special}
   */
   readonly minSpecial?: number;
   /**
-  * Minimum number of uppercase alphabet characters in the result.
+  * Minimum number of uppercase alphabet characters in the result. Default value is `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_upper Password#min_upper}
   */
   readonly minUpper?: number;
   /**
-  * Include numeric characters in the result.
+  * Include numeric characters in the result. Default value is `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#number Password#number}
   */
@@ -62,13 +62,13 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly overrideSpecial?: string;
   /**
-  * Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`
+  * Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#special Password#special}
   */
   readonly special?: boolean | cdktf.IResolvable;
   /**
-  * Include uppercase alphabet characters in the result.
+  * Include uppercase alphabet characters in the result. Default value is `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#upper Password#upper}
   */
