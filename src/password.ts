@@ -83,7 +83,7 @@ export class Password extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "random_password";
+  public static readonly tfResourceType = "random_password";
 
   // ===========
   // INITIALIZER
@@ -100,7 +100,9 @@ export class Password extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'random_password',
       terraformGeneratorMetadata: {
-        providerName: 'random'
+        providerName: 'random',
+        providerVersion: '3.1.2',
+        providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

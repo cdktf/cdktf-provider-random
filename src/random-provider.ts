@@ -23,7 +23,7 @@ export class RandomProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "random";
+  public static readonly tfResourceType = "random";
 
   // ===========
   // INITIALIZER
@@ -41,6 +41,7 @@ export class RandomProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'random',
       terraformGeneratorMetadata: {
         providerName: 'random',
+        providerVersion: '3.1.2',
         providerVersionConstraint: '~> 3.1'
       },
       terraformProviderSource: 'hashicorp/random'
