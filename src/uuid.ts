@@ -23,7 +23,7 @@ export class Uuid extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "random_uuid";
+  public static readonly tfResourceType = "random_uuid";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class Uuid extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'random_uuid',
       terraformGeneratorMetadata: {
-        providerName: 'random'
+        providerName: 'random',
+        providerVersion: '3.1.2',
+        providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

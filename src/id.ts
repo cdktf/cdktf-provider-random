@@ -35,7 +35,7 @@ export class Id extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "random_id";
+  public static readonly tfResourceType = "random_id";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class Id extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'random_id',
       terraformGeneratorMetadata: {
-        providerName: 'random'
+        providerName: 'random',
+        providerVersion: '3.1.2',
+        providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
