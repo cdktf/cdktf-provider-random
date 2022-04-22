@@ -1798,6 +1798,8 @@ public readonly length: number;
 
 The length of the string desired.
 
+The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
+
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#length Password#length}
 
 ---
@@ -2249,6 +2251,8 @@ public readonly length: number;
 - *Type:* `number`
 
 The length of the string desired.
+
+The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#length StringResource#length}
 

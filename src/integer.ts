@@ -59,7 +59,7 @@ export class Integer extends cdktf.TerraformResource {
       terraformResourceType: 'random_integer',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.1.2',
+        providerVersion: '3.1.3',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,

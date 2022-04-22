@@ -41,7 +41,7 @@ export class RandomProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'random',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.1.2',
+        providerVersion: '3.1.3',
         providerVersionConstraint: '~> 3.1'
       },
       terraformProviderSource: 'hashicorp/random'
