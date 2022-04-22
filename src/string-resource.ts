@@ -14,7 +14,7 @@ export interface StringResourceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly keepers?: { [key: string]: string };
   /**
-  * The length of the string desired.
+  * The length of the string desired. The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#length StringResource#length}
   */
@@ -101,7 +101,7 @@ export class StringResource extends cdktf.TerraformResource {
       terraformResourceType: 'random_string',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.1.2',
+        providerVersion: '3.1.3',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,

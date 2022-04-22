@@ -14,7 +14,7 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly keepers?: { [key: string]: string };
   /**
-  * The length of the string desired.
+  * The length of the string desired. The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#length Password#length}
   */
@@ -101,7 +101,7 @@ export class Password extends cdktf.TerraformResource {
       terraformResourceType: 'random_password',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.1.2',
+        providerVersion: '3.1.3',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
