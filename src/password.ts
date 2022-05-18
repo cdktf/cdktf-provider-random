@@ -101,7 +101,7 @@ export class Password extends cdktf.TerraformResource {
       terraformResourceType: 'random_password',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.1.3',
+        providerVersion: '3.2.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
@@ -125,6 +125,11 @@ export class Password extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // bcrypt_hash - computed: true, optional: false, required: false
+  public get bcryptHash() {
+    return this.getStringAttribute('bcrypt_hash');
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
