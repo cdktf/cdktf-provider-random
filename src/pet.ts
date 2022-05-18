@@ -14,7 +14,7 @@ export interface PetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly keepers?: { [key: string]: string };
   /**
-  * The length (in words) of the pet name.
+  * The length (in words) of the pet name. Defaults to 2
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#length Pet#length}
   */
@@ -26,7 +26,7 @@ export interface PetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly prefix?: string;
   /**
-  * The character to separate words in the pet name.
+  * The character to separate words in the pet name. Defaults to "-"
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#separator Pet#separator}
   */
@@ -59,7 +59,7 @@ export class Pet extends cdktf.TerraformResource {
       terraformResourceType: 'random_pet',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.1.3',
+        providerVersion: '3.2.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,

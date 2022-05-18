@@ -435,6 +435,16 @@ public resetUpper()
 
 #### Properties <a name="Properties"></a>
 
+##### `bcryptHash`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.bcryptHash"></a>
+
+```typescript
+public readonly bcryptHash: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.id"></a>
 
 ```typescript
@@ -2022,7 +2032,7 @@ public readonly length: number;
 
 - *Type:* `number`
 
-The length (in words) of the pet name.
+The length (in words) of the pet name. Defaults to 2.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#length Pet#length}
 
@@ -2050,7 +2060,7 @@ public readonly separator: string;
 
 - *Type:* `string`
 
-The character to separate words in the pet name.
+The character to separate words in the pet name. Defaults to "-".
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#separator Pet#separator}
 
