@@ -414,6 +414,12 @@ public resetMinUpper()
 public resetNumber()
 ```
 
+##### `resetNumeric` <a name="@cdktf/provider-random.Password.resetNumeric"></a>
+
+```typescript
+public resetNumeric()
+```
+
 ##### `resetOverrideSpecial` <a name="@cdktf/provider-random.Password.resetOverrideSpecial"></a>
 
 ```typescript
@@ -545,6 +551,16 @@ public readonly numberInput: boolean | IResolvable;
 
 ---
 
+##### `numericInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.numericInput"></a>
+
+```typescript
+public readonly numericInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `overrideSpecialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.Password.property.overrideSpecialInput"></a>
 
 ```typescript
@@ -649,6 +665,16 @@ public readonly minUpper: number;
 
 ```typescript
 public readonly number: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `numeric`<sup>Required</sup> <a name="@cdktf/provider-random.Password.property.numeric"></a>
+
+```typescript
+public readonly numeric: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -1178,6 +1204,12 @@ public resetMinUpper()
 public resetNumber()
 ```
 
+##### `resetNumeric` <a name="@cdktf/provider-random.StringResource.resetNumeric"></a>
+
+```typescript
+public resetNumeric()
+```
+
 ##### `resetOverrideSpecial` <a name="@cdktf/provider-random.StringResource.resetOverrideSpecial"></a>
 
 ```typescript
@@ -1299,6 +1331,16 @@ public readonly numberInput: boolean | IResolvable;
 
 ---
 
+##### `numericInput`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResource.property.numericInput"></a>
+
+```typescript
+public readonly numericInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `overrideSpecialInput`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResource.property.overrideSpecialInput"></a>
 
 ```typescript
@@ -1403,6 +1445,16 @@ public readonly minUpper: number;
 
 ```typescript
 public readonly number: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `numeric`<sup>Required</sup> <a name="@cdktf/provider-random.StringResource.property.numeric"></a>
+
+```typescript
+public readonly numeric: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -1908,9 +1960,23 @@ public readonly number: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include numeric characters in the result. Default value is `true`.
+Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#number Password#number}
+
+---
+
+##### `numeric`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.numeric"></a>
+
+```typescript
+public readonly numeric: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Include numeric characters in the result. Default value is `true`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#numeric Password#numeric}
 
 ---
 
@@ -2362,9 +2428,23 @@ public readonly number: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Include numeric characters in the result. Default value is `true`.
+Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#number StringResource#number}
+
+---
+
+##### `numeric`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.numeric"></a>
+
+```typescript
+public readonly numeric: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Include numeric characters in the result. Default value is `true`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/string#numeric StringResource#numeric}
 
 ---
 
