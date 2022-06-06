@@ -53,7 +53,7 @@ export class Id extends cdktf.TerraformResource {
       terraformResourceType: 'random_id',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.2.0',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,

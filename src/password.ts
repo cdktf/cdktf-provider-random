@@ -50,11 +50,17 @@ export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly minUpper?: number;
   /**
-  * Include numeric characters in the result. Default value is `true`.
+  * Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#number Password#number}
   */
   readonly number?: boolean | cdktf.IResolvable;
+  /**
+  * Include numeric characters in the result. Default value is `true`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#numeric Password#numeric}
+  */
+  readonly numeric?: boolean | cdktf.IResolvable;
   /**
   * Supply your own list of special characters to use for string generation.  This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
   * 
@@ -101,7 +107,7 @@ export class Password extends cdktf.TerraformResource {
       terraformResourceType: 'random_password',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.2.0',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
@@ -117,6 +123,7 @@ export class Password extends cdktf.TerraformResource {
     this._minSpecial = config.minSpecial;
     this._minUpper = config.minUpper;
     this._number = config.number;
+    this._numeric = config.numeric;
     this._overrideSpecial = config.overrideSpecial;
     this._special = config.special;
     this._upper = config.upper;
@@ -245,7 +252,7 @@ export class Password extends cdktf.TerraformResource {
     return this._minUpper;
   }
 
-  // number - computed: false, optional: true, required: false
+  // number - computed: true, optional: true, required: false
   private _number?: boolean | cdktf.IResolvable; 
   public get number() {
     return this.getBooleanAttribute('number');
@@ -259,6 +266,22 @@ export class Password extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get numberInput() {
     return this._number;
+  }
+
+  // numeric - computed: true, optional: true, required: false
+  private _numeric?: boolean | cdktf.IResolvable; 
+  public get numeric() {
+    return this.getBooleanAttribute('numeric');
+  }
+  public set numeric(value: boolean | cdktf.IResolvable) {
+    this._numeric = value;
+  }
+  public resetNumeric() {
+    this._numeric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numericInput() {
+    return this._numeric;
   }
 
   // override_special - computed: false, optional: true, required: false
@@ -328,6 +351,7 @@ export class Password extends cdktf.TerraformResource {
       min_special: cdktf.numberToTerraform(this._minSpecial),
       min_upper: cdktf.numberToTerraform(this._minUpper),
       number: cdktf.booleanToTerraform(this._number),
+      numeric: cdktf.booleanToTerraform(this._numeric),
       override_special: cdktf.stringToTerraform(this._overrideSpecial),
       special: cdktf.booleanToTerraform(this._special),
       upper: cdktf.booleanToTerraform(this._upper),
