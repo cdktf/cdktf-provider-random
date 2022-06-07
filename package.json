@@ -105,7 +105,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/hashicorp/random",
-      "version": "3.3.0"
+      "version": "3.3.1"
     }
   },
   "resolutions": {
