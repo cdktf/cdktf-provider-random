@@ -98,7 +98,7 @@
         "packageId": "HashiCorp.Cdktf.Providers.Random"
       },
       "go": {
-        "moduleName": "github.com/hashicorp/cdktf-provider-random-go"
+        "moduleName": "random"
       }
     },
     "tsc": {
