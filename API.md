@@ -1606,6 +1606,16 @@ import { IdConfig } from '@cdktf/provider-random'
 const idConfig: IdConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.count"></a>
 
 ```typescript
@@ -1626,6 +1636,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.lifecycle"></a>
 
 ```typescript
@@ -1643,6 +1663,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.IdConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -1702,6 +1732,16 @@ import { IntegerConfig } from '@cdktf/provider-random'
 const integerConfig: IntegerConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.count"></a>
 
 ```typescript
@@ -1722,6 +1762,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.lifecycle"></a>
 
 ```typescript
@@ -1739,6 +1789,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.IntegerConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -1810,6 +1870,16 @@ import { PasswordConfig } from '@cdktf/provider-random'
 const passwordConfig: PasswordConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.count"></a>
 
 ```typescript
@@ -1830,6 +1900,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.lifecycle"></a>
 
 ```typescript
@@ -1847,6 +1927,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.PasswordConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -2034,6 +2124,16 @@ import { PetConfig } from '@cdktf/provider-random'
 const petConfig: PetConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.count"></a>
 
 ```typescript
@@ -2054,6 +2154,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.lifecycle"></a>
 
 ```typescript
@@ -2071,6 +2181,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.PetConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -2166,6 +2286,16 @@ import { ShuffleConfig } from '@cdktf/provider-random'
 const shuffleConfig: ShuffleConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.count"></a>
 
 ```typescript
@@ -2186,6 +2316,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -2203,6 +2343,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.ShuffleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -2278,6 +2428,16 @@ import { StringResourceConfig } from '@cdktf/provider-random'
 const stringResourceConfig: StringResourceConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.count"></a>
 
 ```typescript
@@ -2298,6 +2458,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.lifecycle"></a>
 
 ```typescript
@@ -2315,6 +2485,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.StringResourceConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -2502,6 +2682,16 @@ import { UuidConfig } from '@cdktf/provider-random'
 const uuidConfig: UuidConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.count"></a>
 
 ```typescript
@@ -2522,6 +2712,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.lifecycle"></a>
 
 ```typescript
@@ -2539,6 +2739,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-random.UuidConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 

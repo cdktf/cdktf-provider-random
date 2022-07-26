@@ -67,7 +67,10 @@ export class Shuffle extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._input = config.input;
     this._keepers = config.keepers;
@@ -156,7 +159,7 @@ export class Shuffle extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      input: cdktf.listMapper(cdktf.stringToTerraform)(this._input),
+      input: cdktf.listMapper(cdktf.stringToTerraform, false)(this._input),
       keepers: cdktf.hashMapper(cdktf.stringToTerraform)(this._keepers),
       result_count: cdktf.numberToTerraform(this._resultCount),
       seed: cdktf.stringToTerraform(this._seed),
