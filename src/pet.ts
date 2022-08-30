@@ -59,7 +59,7 @@ export class Pet extends cdktf.TerraformResource {
       terraformResourceType: 'random_pet',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.3.2',
+        providerVersion: '3.4.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
@@ -101,7 +101,7 @@ export class Pet extends cdktf.TerraformResource {
     return this._keepers;
   }
 
-  // length - computed: false, optional: true, required: false
+  // length - computed: true, optional: true, required: false
   private _length?: number; 
   public get length() {
     return this.getNumberAttribute('length');
@@ -133,7 +133,7 @@ export class Pet extends cdktf.TerraformResource {
     return this._prefix;
   }
 
-  // separator - computed: false, optional: true, required: false
+  // separator - computed: true, optional: true, required: false
   private _separator?: string; 
   public get separator() {
     return this.getStringAttribute('separator');

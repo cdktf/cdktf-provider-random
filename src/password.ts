@@ -107,7 +107,7 @@ export class Password extends cdktf.TerraformResource {
       terraformResourceType: 'random_password',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.3.2',
+        providerVersion: '3.4.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
@@ -175,7 +175,7 @@ export class Password extends cdktf.TerraformResource {
     return this._length;
   }
 
-  // lower - computed: false, optional: true, required: false
+  // lower - computed: true, optional: true, required: false
   private _lower?: boolean | cdktf.IResolvable; 
   public get lower() {
     return this.getBooleanAttribute('lower');
@@ -191,7 +191,7 @@ export class Password extends cdktf.TerraformResource {
     return this._lower;
   }
 
-  // min_lower - computed: false, optional: true, required: false
+  // min_lower - computed: true, optional: true, required: false
   private _minLower?: number; 
   public get minLower() {
     return this.getNumberAttribute('min_lower');
@@ -207,7 +207,7 @@ export class Password extends cdktf.TerraformResource {
     return this._minLower;
   }
 
-  // min_numeric - computed: false, optional: true, required: false
+  // min_numeric - computed: true, optional: true, required: false
   private _minNumeric?: number; 
   public get minNumeric() {
     return this.getNumberAttribute('min_numeric');
@@ -223,7 +223,7 @@ export class Password extends cdktf.TerraformResource {
     return this._minNumeric;
   }
 
-  // min_special - computed: false, optional: true, required: false
+  // min_special - computed: true, optional: true, required: false
   private _minSpecial?: number; 
   public get minSpecial() {
     return this.getNumberAttribute('min_special');
@@ -239,7 +239,7 @@ export class Password extends cdktf.TerraformResource {
     return this._minSpecial;
   }
 
-  // min_upper - computed: false, optional: true, required: false
+  // min_upper - computed: true, optional: true, required: false
   private _minUpper?: number; 
   public get minUpper() {
     return this.getNumberAttribute('min_upper');
@@ -287,7 +287,7 @@ export class Password extends cdktf.TerraformResource {
     return this._numeric;
   }
 
-  // override_special - computed: false, optional: true, required: false
+  // override_special - computed: true, optional: true, required: false
   private _overrideSpecial?: string; 
   public get overrideSpecial() {
     return this.getStringAttribute('override_special');
@@ -308,7 +308,7 @@ export class Password extends cdktf.TerraformResource {
     return this.getStringAttribute('result');
   }
 
-  // special - computed: false, optional: true, required: false
+  // special - computed: true, optional: true, required: false
   private _special?: boolean | cdktf.IResolvable; 
   public get special() {
     return this.getBooleanAttribute('special');
@@ -324,7 +324,7 @@ export class Password extends cdktf.TerraformResource {
     return this._special;
   }
 
-  // upper - computed: false, optional: true, required: false
+  // upper - computed: true, optional: true, required: false
   private _upper?: boolean | cdktf.IResolvable; 
   public get upper() {
     return this.getBooleanAttribute('upper');
