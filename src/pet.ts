@@ -59,7 +59,7 @@ export class Pet extends cdktf.TerraformResource {
       terraformResourceType: 'random_pet',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.4.0',
+        providerVersion: '3.4.1',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
