@@ -107,7 +107,7 @@ export class StringResource extends cdktf.TerraformResource {
       terraformResourceType: 'random_string',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.4.0',
+        providerVersion: '3.4.1',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
