@@ -107,7 +107,7 @@ export class StringResource extends cdktf.TerraformResource {
       terraformResourceType: 'random_string',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.4.2',
+        providerVersion: '3.4.3',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
@@ -282,7 +282,7 @@ export class StringResource extends cdktf.TerraformResource {
     return this._numeric;
   }
 
-  // override_special - computed: true, optional: true, required: false
+  // override_special - computed: false, optional: true, required: false
   private _overrideSpecial?: string; 
   public get overrideSpecial() {
     return this.getStringAttribute('override_special');
