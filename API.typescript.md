@@ -1,11 +1,11 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
-- [id](./id.md)
-- [integer](./integer.md)
-- [password](./password.md)
-- [pet](./pet.md)
-- [provider](./provider.md)
-- [shuffle](./shuffle.md)
-- [stringResource](./stringResource.md)
-- [uuid](./uuid.md)
+- [id](./id.typescript.md)
+- [integer](./integer.typescript.md)
+- [password](./password.typescript.md)
+- [pet](./pet.typescript.md)
+- [provider](./provider.typescript.md)
+- [shuffle](./shuffle.typescript.md)
+- [stringResource](./stringResource.typescript.md)
+- [uuid](./uuid.typescript.md)
