@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/random random}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.provider.RandomProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v5/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/v6/provider"
 
 provider.NewRandomProvider(scope Construct, id *string, config RandomProviderConfig) RandomProvider
 ```
@@ -143,7 +143,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.provider.RandomProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v5/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/v6/provider"
 
 provider.RandomProvider_IsConstruct(x interface{}) *bool
 ```
@@ -175,7 +175,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.provider.RandomProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v5/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/v6/provider"
 
 provider.RandomProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -189,7 +189,7 @@ provider.RandomProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-random.provider.RandomProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v5/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/v6/provider"
 
 provider.RandomProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.provider.RandomProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v5/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/v6/provider"
 
 &provider.RandomProviderConfig {
 	Alias: *string,
