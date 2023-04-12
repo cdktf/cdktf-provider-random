@@ -107,7 +107,7 @@ export class Password extends cdktf.TerraformResource {
       terraformResourceType: 'random_password',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.4.3',
+        providerVersion: '3.5.0',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
