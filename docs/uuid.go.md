@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid random
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.uuid.Uuid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/uuid"
 
 uuid.NewUuid(scope Construct, id *string, config UuidConfig) Uuid
 ```
@@ -273,7 +273,7 @@ func ResetKeepers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.uuid.Uuid.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/uuid"
 
 uuid.Uuid_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.uuid.Uuid.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/uuid"
 
 uuid.Uuid_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ uuid.Uuid_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.uuid.Uuid.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/uuid"
 
 uuid.Uuid_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.uuid.UuidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/uuid"
 
 &uuid.UuidConfig {
 	Connection: interface{},
