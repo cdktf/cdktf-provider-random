@@ -41,7 +41,7 @@ export class Uuid extends cdktf.TerraformResource {
       terraformResourceType: 'random_uuid',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.5.0',
+        providerVersion: '3.5.1',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
