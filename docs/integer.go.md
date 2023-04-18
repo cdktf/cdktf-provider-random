@@ -1,6 +1,6 @@
 # `random_integer`
 
-Refer to the Terraform Registory for docs: [`random_integer`](https://www.terraform.io/docs/providers/random/r/integer).
+Refer to the Terraform Registory for docs: [`random_integer`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer).
 
 # `integer` Submodule <a name="`integer` Submodule" id="@cdktf/provider-random.integer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`random_integer`](https://www.terraf
 
 ### Integer <a name="Integer" id="@cdktf/provider-random.integer.Integer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random/r/integer random_integer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer random_integer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.integer.Integer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
 
 integer.NewInteger(scope Construct, id *string, config IntegerConfig) Integer
 ```
@@ -284,7 +284,7 @@ func ResetSeed()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.integer.Integer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
 
 integer.Integer_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.integer.Integer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
 
 integer.Integer_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ integer.Integer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.integer.Integer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
 
 integer.Integer_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ integer.Integer_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-random.integer.Integer.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.Integer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.Integer.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.integer.Integer.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.integer.Integer.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.Integer.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.Integer.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.Integer.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.integer.Integer.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -639,11 +639,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.integer.IntegerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
 
 &integer.IntegerConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -661,7 +661,7 @@ import "github.com/cdktf/cdktf-provider-random-go/random/v6/integer"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.integer.IntegerConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.integer.IntegerConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.integer.IntegerConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.IntegerConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.IntegerConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.integer.IntegerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -687,10 +687,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.integer.IntegerConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -754,7 +754,7 @@ Max *f64
 
 The maximum inclusive value of the range.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#max Integer#max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#max Integer#max}
 
 ---
 
@@ -768,7 +768,7 @@ Min *f64
 
 The minimum inclusive value of the range.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#min Integer#min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#min Integer#min}
 
 ---
 
@@ -784,7 +784,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#keepers Integer#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#keepers Integer#keepers}
 
 ---
 
@@ -798,7 +798,7 @@ Seed *string
 
 A custom seed to always produce the same value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#seed Integer#seed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#seed Integer#seed}
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/integer
+// https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface IntegerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#keepers Integer#keepers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#keepers Integer#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The maximum inclusive value of the range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#max Integer#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#max Integer#max}
   */
   readonly max: number;
   /**
   * The minimum inclusive value of the range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#min Integer#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#min Integer#min}
   */
   readonly min: number;
   /**
   * A custom seed to always produce the same value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/integer#seed Integer#seed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#seed Integer#seed}
   */
   readonly seed?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/integer random_integer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer random_integer}
 */
 export class Integer extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Integer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/integer random_integer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer random_integer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `random_uuid`
 
-Refer to the Terraform Registory for docs: [`random_uuid`](https://www.terraform.io/docs/providers/random/r/uuid).
+Refer to the Terraform Registory for docs: [`random_uuid`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid).
 
 # `uuid` Submodule <a name="`uuid` Submodule" id="@cdktf/provider-random.uuid"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`random_uuid`](https://www.terraform
 
 ### Uuid <a name="Uuid" id="@cdktf/provider-random.uuid.Uuid"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid random_uuid}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid random_uuid}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.uuid.Uuid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/uuid"
 
 uuid.NewUuid(scope Construct, id *string, config UuidConfig) Uuid
 ```
@@ -277,7 +277,7 @@ func ResetKeepers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.uuid.Uuid.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/uuid"
 
 uuid.Uuid_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.uuid.Uuid.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/uuid"
 
 uuid.Uuid_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ uuid.Uuid_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.uuid.Uuid.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/uuid"
 
 uuid.Uuid_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ uuid.Uuid_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.uuid.Uuid.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.uuid.Uuid.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.uuid.Uuid.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -566,11 +566,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.uuid.UuidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
+import "github.com/cdktf/cdktf-provider-random-go/random/v7/uuid"
 
 &uuid.UuidConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -585,7 +585,7 @@ import "github.com/cdktf/cdktf-provider-random-go/random/v6/uuid"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -608,10 +608,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.uuid.UuidConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -677,7 +677,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/uuid#keepers Uuid#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid#keepers Uuid#keepers}
 
 ---
 
