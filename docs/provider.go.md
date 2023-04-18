@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`random`](https://www.terraform.io/docs/providers/random).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-random.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

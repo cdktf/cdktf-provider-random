@@ -1,3 +1,7 @@
+# `random_password`
+
+Refer to the Terraform Registory for docs: [`random_password`](https://www.terraform.io/docs/providers/random/r/password).
+
 # `password` Submodule <a name="`password` Submodule" id="@cdktf/provider-random.password"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
