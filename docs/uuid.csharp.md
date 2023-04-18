@@ -1,6 +1,6 @@
 # `random_uuid`
 
-Refer to the Terraform Registory for docs: [`random_uuid`](https://www.terraform.io/docs/providers/random/r/uuid).
+Refer to the Terraform Registory for docs: [`random_uuid`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid).
 
 # `uuid` Submodule <a name="`uuid` Submodule" id="@cdktf/provider-random.uuid"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`random_uuid`](https://www.terraform
 
 ### Uuid <a name="Uuid" id="@cdktf/provider-random.uuid.Uuid"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random/r/uuid random_uuid}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid random_uuid}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.uuid.Uuid.Initializer"></a>
 
@@ -346,7 +346,7 @@ Uuid.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.uuid.Uuid.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.uuid.Uuid.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.Uuid.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.uuid.Uuid.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -570,7 +570,7 @@ using HashiCorp.Cdktf.Providers.Random;
 
 new UuidConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -585,7 +585,7 @@ new UuidConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.uuid.UuidConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -608,10 +608,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.uuid.UuidConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -677,7 +677,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/uuid#keepers Uuid#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid#keepers Uuid#keepers}
 
 ---
 

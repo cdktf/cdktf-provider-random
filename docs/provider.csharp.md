@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`random`](https://www.terraform.io/docs/providers/random).
+Refer to the Terraform Registory for docs: [`random`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-random.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`random`](https://www.terraform.io/d
 
 ### RandomProvider <a name="RandomProvider" id="@cdktf/provider-random.provider.RandomProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random random}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs random}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.provider.RandomProvider.Initializer"></a>
 
@@ -373,7 +373,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random#alias RandomProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs#alias RandomProvider#alias}
 
 ---
 

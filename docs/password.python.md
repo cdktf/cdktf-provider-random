@@ -1,6 +1,6 @@
 # `random_password`
 
-Refer to the Terraform Registory for docs: [`random_password`](https://www.terraform.io/docs/providers/random/r/password).
+Refer to the Terraform Registory for docs: [`random_password`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password).
 
 # `password` Submodule <a name="`password` Submodule" id="@cdktf/provider-random.password"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`random_password`](https://www.terra
 
 ### Password <a name="Password" id="@cdktf/provider-random.password.Password"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random/r/password random_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password random_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.password.Password.Initializer"></a>
 
@@ -19,7 +19,7 @@ password.Password(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -45,7 +45,7 @@ password.Password(
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -92,7 +92,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.password.Password.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -134,7 +134,7 @@ The length of the string desired.
 
 The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#length Password#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#length Password#length}
 
 ---
 
@@ -146,7 +146,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#keepers Password#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#keepers Password#keepers}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#lower Password#lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#lower Password#lower}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_lower Password#min_lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_lower Password#min_lower}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Minimum number of numeric characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_numeric Password#min_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_numeric Password#min_numeric}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Minimum number of special characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_special Password#min_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_special Password#min_special}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_upper Password#min_upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_upper Password#min_upper}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#number Password#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#number Password#number}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Include numeric characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#numeric Password#numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#numeric Password#numeric}
 
 ---
 
@@ -228,7 +228,7 @@ Supply your own list of special characters to use for string generation.
 
 This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#override_special Password#override_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#override_special Password#override_special}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#special Password#special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#special Password#special}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/rando
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#upper Password#upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#upper Password#upper}
 
 ---
 
@@ -649,7 +649,7 @@ password.Password.is_terraform_resource(
 | <code><a href="#@cdktf/provider-random.password.Password.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.password.Password.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.password.Password.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -770,10 +770,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.password.Password.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1126,7 +1126,7 @@ from cdktf_cdktf_provider_random import password
 
 password.PasswordConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1152,7 +1152,7 @@ password.PasswordConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1186,10 +1186,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.password.PasswordConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1255,7 +1255,7 @@ The length of the string desired.
 
 The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#length Password#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#length Password#length}
 
 ---
 
@@ -1271,7 +1271,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#keepers Password#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#keepers Password#keepers}
 
 ---
 
@@ -1285,7 +1285,7 @@ lower: typing.Union[bool, IResolvable]
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#lower Password#lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#lower Password#lower}
 
 ---
 
@@ -1299,7 +1299,7 @@ min_lower: typing.Union[int, float]
 
 Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_lower Password#min_lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_lower Password#min_lower}
 
 ---
 
@@ -1313,7 +1313,7 @@ min_numeric: typing.Union[int, float]
 
 Minimum number of numeric characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_numeric Password#min_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_numeric Password#min_numeric}
 
 ---
 
@@ -1327,7 +1327,7 @@ min_special: typing.Union[int, float]
 
 Minimum number of special characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_special Password#min_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_special Password#min_special}
 
 ---
 
@@ -1341,7 +1341,7 @@ min_upper: typing.Union[int, float]
 
 Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#min_upper Password#min_upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_upper Password#min_upper}
 
 ---
 
@@ -1355,7 +1355,7 @@ number: typing.Union[bool, IResolvable]
 
 Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#number Password#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#number Password#number}
 
 ---
 
@@ -1369,7 +1369,7 @@ numeric: typing.Union[bool, IResolvable]
 
 Include numeric characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#numeric Password#numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#numeric Password#numeric}
 
 ---
 
@@ -1385,7 +1385,7 @@ Supply your own list of special characters to use for string generation.
 
 This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#override_special Password#override_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#override_special Password#override_special}
 
 ---
 
@@ -1399,7 +1399,7 @@ special: typing.Union[bool, IResolvable]
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#special Password#special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#special Password#special}
 
 ---
 
@@ -1413,7 +1413,7 @@ upper: typing.Union[bool, IResolvable]
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/password#upper Password#upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#upper Password#upper}
 
 ---
 

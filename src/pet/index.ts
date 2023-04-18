@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/random/r/pet
+// https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface PetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#keepers Pet#keepers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#keepers Pet#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The length (in words) of the pet name. Defaults to 2
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#length Pet#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#length Pet#length}
   */
   readonly length?: number;
   /**
   * A string to prefix the name with.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#prefix Pet#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#prefix Pet#prefix}
   */
   readonly prefix?: string;
   /**
   * The character to separate words in the pet name. Defaults to "-"
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#separator Pet#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#separator Pet#separator}
   */
   readonly separator?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/random/r/pet random_pet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet}
 */
 export class Pet extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Pet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/random/r/pet random_pet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `random_pet`
 
-Refer to the Terraform Registory for docs: [`random_pet`](https://www.terraform.io/docs/providers/random/r/pet).
+Refer to the Terraform Registory for docs: [`random_pet`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet).
 
 # `pet` Submodule <a name="`pet` Submodule" id="@cdktf/provider-random.pet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`random_pet`](https://www.terraform.
 
 ### Pet <a name="Pet" id="@cdktf/provider-random.pet.Pet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random/r/pet random_pet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.pet.Pet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.NewPet(scope Construct, id *string, config PetConfig) Pet
 ```
@@ -298,7 +298,7 @@ func ResetSeparator()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.pet.Pet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.pet.Pet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ pet.Pet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.pet.Pet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ pet.Pet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-random.pet.Pet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.Pet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.Pet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.pet.Pet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.pet.Pet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.Pet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.Pet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.Pet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -470,10 +470,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.pet.Pet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -642,11 +642,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.pet.PetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 &pet.PetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -664,7 +664,7 @@ import "github.com/cdktf/cdktf-provider-random-go/random/v6/pet"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.pet.PetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.pet.PetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.pet.PetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.PetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.PetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.pet.PetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -690,10 +690,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.pet.PetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -759,7 +759,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#keepers Pet#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#keepers Pet#keepers}
 
 ---
 
@@ -773,7 +773,7 @@ Length *f64
 
 The length (in words) of the pet name. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#length Pet#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#length Pet#length}
 
 ---
 
@@ -787,7 +787,7 @@ Prefix *string
 
 A string to prefix the name with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#prefix Pet#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#prefix Pet#prefix}
 
 ---
 
@@ -801,7 +801,7 @@ Separator *string
 
 The character to separate words in the pet name. Defaults to "-".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/pet#separator Pet#separator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#separator Pet#separator}
 
 ---
 

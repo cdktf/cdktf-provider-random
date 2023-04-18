@@ -1,6 +1,6 @@
 # `random_shuffle`
 
-Refer to the Terraform Registory for docs: [`random_shuffle`](https://www.terraform.io/docs/providers/random/r/shuffle).
+Refer to the Terraform Registory for docs: [`random_shuffle`](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle).
 
 # `shuffle` Submodule <a name="`shuffle` Submodule" id="@cdktf/provider-random.shuffle"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`random_shuffle`](https://www.terraf
 
 ### Shuffle <a name="Shuffle" id="@cdktf/provider-random.shuffle.Shuffle"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/random/r/shuffle random_shuffle}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.shuffle.Shuffle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
 
 shuffle.NewShuffle(scope Construct, id *string, config ShuffleConfig) Shuffle
 ```
@@ -291,7 +291,7 @@ func ResetSeed()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.shuffle.Shuffle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
 
 shuffle.Shuffle_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.shuffle.Shuffle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
 
 shuffle.Shuffle_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ shuffle.Shuffle_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.shuffle.Shuffle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
 
 shuffle.Shuffle_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ shuffle.Shuffle_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.Shuffle.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.shuffle.Shuffle.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -646,11 +646,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.shuffle.ShuffleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v6/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
 
 &shuffle.ShuffleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -668,7 +668,7 @@ import "github.com/cdktf/cdktf-provider-random-go/random/v6/shuffle"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.shuffle.ShuffleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.shuffle.ShuffleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.shuffle.ShuffleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.ShuffleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.ShuffleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.shuffle.ShuffleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -694,10 +694,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.shuffle.ShuffleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -761,7 +761,7 @@ Input *[]*string
 
 The list of strings to shuffle.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#input Shuffle#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle#input Shuffle#input}
 
 ---
 
@@ -777,7 +777,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#keepers Shuffle#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle#keepers Shuffle#keepers}
 
 ---
 
@@ -793,7 +793,7 @@ The number of results to return.
 
 Defaults to the number of items in the `input` list. If fewer items are requested, some elements will be excluded from the result. If more items are requested, items will be repeated in the result but not more frequently than the number of items in the input list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#result_count Shuffle#result_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle#result_count Shuffle#result_count}
 
 ---
 
@@ -809,7 +809,7 @@ Arbitrary string with which to seed the random number generator, in order to pro
 
 *Important:** Even with an identical seed, it is not guaranteed that the same permutation will be produced across different versions of Terraform. This argument causes the result to be *less volatile*, but not fixed for all time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/random/r/shuffle#seed Shuffle#seed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle#seed Shuffle#seed}
 
 ---
 
