@@ -61,7 +61,8 @@ This project is explicitly not tracking the Terraform random Provider version 1:
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform random Provider](https://github.com/terraform-providers/terraform-provider-random)
+- [Terraform random Provider](https://registry.terraform.io/providers/hashicorp/random/3.1.0)
+    - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-random/releases)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
