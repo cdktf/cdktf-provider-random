@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.pet.Pet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/pet"
 
 pet.NewPet(scope Construct, id *string, config PetConfig) Pet
 ```
@@ -298,7 +298,7 @@ func ResetSeparator()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.pet.Pet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/pet"
 
 pet.Pet_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.pet.Pet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/pet"
 
 pet.Pet_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ pet.Pet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.pet.Pet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/pet"
 
 pet.Pet_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.pet.PetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/pet"
 
 &pet.PetConfig {
 	Connection: interface{},

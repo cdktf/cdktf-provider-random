@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.integer.Integer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/integer"
 
 integer.NewInteger(scope Construct, id *string, config IntegerConfig) Integer
 ```
@@ -284,7 +284,7 @@ func ResetSeed()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.integer.Integer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/integer"
 
 integer.Integer_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.integer.Integer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/integer"
 
 integer.Integer_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ integer.Integer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.integer.Integer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/integer"
 
 integer.Integer_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.integer.IntegerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v7/integer"
+import "github.com/cdktf/cdktf-provider-random-go/random/v8/integer"
 
 &integer.IntegerConfig {
 	Connection: interface{},
