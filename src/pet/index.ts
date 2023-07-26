@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface PetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#keepers Pet#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The length (in words) of the pet name. Defaults to 2
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#length Pet#length}
   */
   readonly length?: number;
   /**
   * A string to prefix the name with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#prefix Pet#prefix}
   */
   readonly prefix?: string;
   /**
   * The character to separate words in the pet name. Defaults to "-"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet#separator Pet#separator}
   */
   readonly separator?: string;

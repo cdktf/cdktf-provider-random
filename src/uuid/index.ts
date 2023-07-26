@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface UuidConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid#keepers Uuid#keepers}
   */
   readonly keepers?: { [key: string]: string };

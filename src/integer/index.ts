@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface IntegerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#keepers Integer#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The maximum inclusive value of the range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#max Integer#max}
   */
   readonly max: number;
   /**
   * The minimum inclusive value of the range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#min Integer#min}
   */
   readonly min: number;
   /**
   * A custom seed to always produce the same value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#seed Integer#seed}
   */
   readonly seed?: string;

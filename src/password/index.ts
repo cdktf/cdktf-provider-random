@@ -14,73 +14,73 @@ import * as cdktf from 'cdktf';
 export interface PasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#keepers Password#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The length of the string desired. The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#length Password#length}
   */
   readonly length: number;
   /**
   * Include lowercase alphabet characters in the result. Default value is `true`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#lower Password#lower}
   */
   readonly lower?: boolean | cdktf.IResolvable;
   /**
   * Minimum number of lowercase alphabet characters in the result. Default value is `0`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_lower Password#min_lower}
   */
   readonly minLower?: number;
   /**
   * Minimum number of numeric characters in the result. Default value is `0`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_numeric Password#min_numeric}
   */
   readonly minNumeric?: number;
   /**
   * Minimum number of special characters in the result. Default value is `0`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_special Password#min_special}
   */
   readonly minSpecial?: number;
   /**
   * Minimum number of uppercase alphabet characters in the result. Default value is `0`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#min_upper Password#min_upper}
   */
   readonly minUpper?: number;
   /**
   * Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#number Password#number}
   */
   readonly number?: boolean | cdktf.IResolvable;
   /**
   * Include numeric characters in the result. Default value is `true`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#numeric Password#numeric}
   */
   readonly numeric?: boolean | cdktf.IResolvable;
   /**
   * Supply your own list of special characters to use for string generation.  This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#override_special Password#override_special}
   */
   readonly overrideSpecial?: string;
   /**
   * Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#special Password#special}
   */
   readonly special?: boolean | cdktf.IResolvable;
   /**
   * Include uppercase alphabet characters in the result. Default value is `true`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#upper Password#upper}
   */
   readonly upper?: boolean | cdktf.IResolvable;
