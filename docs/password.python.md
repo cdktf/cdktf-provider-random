@@ -262,6 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-random.password.Password.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-random.password.Password.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-random.password.Password.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-random.password.Password.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
@@ -271,7 +272,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-random.password.Password.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.password.Password.importFrom">import_from</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.password.Password.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-random.password.Password.resetKeepers">reset_keepers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.resetLower">reset_lower</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.resetMinLower">reset_min_lower</a></code> | *No description.* |
@@ -354,6 +357,24 @@ def to_terraform() -> typing.Any
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-random.password.Password.addMoveTarget"></a>
+
+```python
+def add_move_target(
+  move_target: str
+) -> None
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-random.password.Password.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-random.password.Password.getAnyMapAttribute"></a>
 
@@ -481,6 +502,27 @@ def get_string_map_attribute(
 
 ---
 
+##### `import_from` <a name="import_from" id="@cdktf/provider-random.password.Password.importFrom"></a>
+
+```python
+def import_from(
+  id: str,
+  provider: TerraformProvider = None
+) -> None
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-random.password.Password.importFrom.parameter.id"></a>
+
+- *Type:* str
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-random.password.Password.importFrom.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
 ##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-random.password.Password.interpolationForAttribute"></a>
 
 ```python
@@ -492,6 +534,33 @@ def interpolation_for_attribute(
 ###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-random.password.Password.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
+
+---
+
+##### `move_to` <a name="move_to" id="@cdktf/provider-random.password.Password.moveTo"></a>
+
+```python
+def move_to(
+  move_target: str,
+  index: typing.Union[str, typing.Union[int, float]] = None
+) -> None
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-random.password.Password.moveTo.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-random.password.Password.moveTo.parameter.index"></a>
+
+- *Type:* typing.Union[str, typing.Union[int, float]]
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -568,6 +637,7 @@ def reset_upper() -> None
 | <code><a href="#@cdktf/provider-random.password.Password.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-random.password.Password.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.password.Password.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.password.Password.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Password resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -634,6 +704,55 @@ password.Password.is_terraform_resource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-random.password.Password.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-random.password.Password.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_random import password
+
+password.Password.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a Password resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-random.password.Password.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-random.password.Password.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the Password to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-random.password.Password.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing Password that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-random.password.Password.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the Password to import is found.
 
 ---
 

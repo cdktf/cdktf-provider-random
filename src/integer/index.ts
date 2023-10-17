@@ -48,6 +48,20 @@ export class Integer extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "random_integer";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a Integer resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the Integer to import
+  * @param importFromId The id of the existing Integer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Integer to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "random_integer", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

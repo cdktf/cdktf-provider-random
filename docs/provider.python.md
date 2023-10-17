@@ -154,6 +154,7 @@ def reset_alias() -> None
 | <code><a href="#@cdktf/provider-random.provider.RandomProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-random.provider.RandomProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.provider.RandomProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.provider.RandomProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a RandomProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -220,6 +221,55 @@ provider.RandomProvider.is_terraform_provider(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-random.provider.RandomProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-random.provider.RandomProvider.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_random import provider
+
+provider.RandomProvider.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a RandomProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-random.provider.RandomProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-random.provider.RandomProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the RandomProvider to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-random.provider.RandomProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing RandomProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-random.provider.RandomProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the RandomProvider to import is found.
 
 ---
 
