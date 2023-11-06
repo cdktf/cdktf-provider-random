@@ -1,7 +1,9 @@
 
-# Terraform CDK random Provider ~> 3.1
+# Terraform CDK random Provider tracks ~> 3.1
 
 This repo builds and publishes the Terraform random Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on random 3.5.1
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform random Provider version 1:
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform random Provider](https://registry.terraform.io/providers/hashicorp/random/3.1.0)
+- [Terraform random Provider](https://registry.terraform.io/providers/hashicorp/random/3.5.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-random/releases)
 - [Terraform Engine](https://terraform.io)
 
