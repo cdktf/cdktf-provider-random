@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.shuffle.Shuffle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/v10/shuffle"
 
 shuffle.NewShuffle(scope Construct, id *string, config ShuffleConfig) Shuffle
 ```
@@ -349,7 +349,7 @@ func ResetSeed()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.shuffle.Shuffle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/v10/shuffle"
 
 shuffle.Shuffle_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.shuffle.Shuffle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/v10/shuffle"
 
 shuffle.Shuffle_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ shuffle.Shuffle_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.shuffle.Shuffle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/v10/shuffle"
 
 shuffle.Shuffle_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ shuffle.Shuffle_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-random.shuffle.Shuffle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/v10/shuffle"
 
 shuffle.Shuffle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.shuffle.ShuffleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/shuffle"
+import "github.com/cdktf/cdktf-provider-random-go/random/v10/shuffle"
 
 &shuffle.ShuffleConfig {
 	Connection: interface{},
