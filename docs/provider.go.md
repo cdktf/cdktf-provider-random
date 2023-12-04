@@ -4,12 +4,12 @@
 
 ### RandomProvider <a name="RandomProvider" id="@cdktf/provider-random.provider.RandomProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs random}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs random}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.provider.RandomProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v10/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/provider"
 
 provider.NewRandomProvider(scope Construct, id *string, config RandomProviderConfig) RandomProvider
 ```
@@ -144,7 +144,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.provider.RandomProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v10/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/provider"
 
 provider.RandomProvider_IsConstruct(x interface{}) *bool
 ```
@@ -176,7 +176,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.provider.RandomProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v10/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/provider"
 
 provider.RandomProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -190,7 +190,7 @@ provider.RandomProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-random.provider.RandomProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v10/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/provider"
 
 provider.RandomProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -204,7 +204,7 @@ provider.RandomProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-random.provider.RandomProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v10/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/provider"
 
 provider.RandomProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -233,7 +233,7 @@ The construct id used in the generated config for the RandomProvider to import.
 
 The id of the existing RandomProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -389,7 +389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.provider.RandomProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v10/provider"
+import "github.com/cdktf/cdktf-provider-random-go/random/provider"
 
 &provider.RandomProviderConfig {
 	Alias: *string,
@@ -414,7 +414,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs#alias RandomProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs#alias RandomProvider#alias}
 
 ---
 

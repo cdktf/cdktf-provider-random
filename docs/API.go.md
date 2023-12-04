@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [bytes](./bytes.go.md)
 - [id](./id.go.md)
 - [integer](./integer.go.md)
 - [password](./password.go.md)

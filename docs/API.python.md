@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [bytes](./bytes.python.md)
 - [id](./id.python.md)
 - [integer](./integer.python.md)
 - [password](./password.python.md)

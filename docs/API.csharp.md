@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [bytes](./bytes.csharp.md)
 - [id](./id.csharp.md)
 - [integer](./integer.csharp.md)
 - [password](./password.csharp.md)

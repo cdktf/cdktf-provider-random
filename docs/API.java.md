@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [bytes](./bytes.java.md)
 - [id](./id.java.md)
 - [integer](./integer.java.md)
 - [password](./password.java.md)
