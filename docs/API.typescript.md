@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [bytes](./bytes.typescript.md)
 - [id](./id.typescript.md)
 - [integer](./integer.typescript.md)
 - [password](./password.typescript.md)
