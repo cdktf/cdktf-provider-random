@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [bytes](./bytes.typescript.md)
 - [id](./id.typescript.md)
 - [integer](./integer.typescript.md)
@@ -10,3 +13,8 @@ The following submodules are available:
 - [shuffle](./shuffle.typescript.md)
 - [stringResource](./stringResource.typescript.md)
 - [uuid](./uuid.typescript.md)
+
+
+
+
+

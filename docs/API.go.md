@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [bytes](./bytes.go.md)
 - [id](./id.go.md)
 - [integer](./integer.go.md)
@@ -10,3 +13,8 @@ The following submodules are available:
 - [shuffle](./shuffle.go.md)
 - [stringResource](./stringResource.go.md)
 - [uuid](./uuid.go.md)
+
+
+
+
+
