@@ -179,4 +179,36 @@ export class Integer extends cdktf.TerraformResource {
       seed: cdktf.stringToTerraform(this._seed),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      max: {
+        value: cdktf.numberToHclTerraform(this._max),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min: {
+        value: cdktf.numberToHclTerraform(this._min),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      seed: {
+        value: cdktf.stringToHclTerraform(this._seed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -374,4 +374,84 @@ export class StringResource extends cdktf.TerraformResource {
       upper: cdktf.booleanToTerraform(this._upper),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      length: {
+        value: cdktf.numberToHclTerraform(this._length),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lower: {
+        value: cdktf.booleanToHclTerraform(this._lower),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      min_lower: {
+        value: cdktf.numberToHclTerraform(this._minLower),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_numeric: {
+        value: cdktf.numberToHclTerraform(this._minNumeric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_special: {
+        value: cdktf.numberToHclTerraform(this._minSpecial),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_upper: {
+        value: cdktf.numberToHclTerraform(this._minUpper),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      number: {
+        value: cdktf.booleanToHclTerraform(this._number),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      numeric: {
+        value: cdktf.booleanToHclTerraform(this._numeric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      override_special: {
+        value: cdktf.stringToHclTerraform(this._overrideSpecial),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      special: {
+        value: cdktf.booleanToHclTerraform(this._special),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      upper: {
+        value: cdktf.booleanToHclTerraform(this._upper),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

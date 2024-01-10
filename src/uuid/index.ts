@@ -113,4 +113,18 @@ export class Uuid extends cdktf.TerraformResource {
       keepers: cdktf.hashMapper(cdktf.stringToTerraform)(this._keepers),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -180,4 +180,36 @@ export class Pet extends cdktf.TerraformResource {
       separator: cdktf.stringToTerraform(this._separator),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      length: {
+        value: cdktf.numberToHclTerraform(this._length),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      separator: {
+        value: cdktf.stringToHclTerraform(this._separator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

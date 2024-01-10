@@ -173,4 +173,30 @@ export class Id extends cdktf.TerraformResource {
       prefix: cdktf.stringToTerraform(this._prefix),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      byte_length: {
+        value: cdktf.numberToHclTerraform(this._byteLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

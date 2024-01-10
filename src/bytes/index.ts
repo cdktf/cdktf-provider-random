@@ -134,4 +134,24 @@ export class Bytes extends cdktf.TerraformResource {
       length: cdktf.numberToTerraform(this._length),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      length: {
+        value: cdktf.numberToHclTerraform(this._length),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
