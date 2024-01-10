@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/pet
 // generated from terraform resource schema
 
@@ -179,5 +174,37 @@ export class Pet extends cdktf.TerraformResource {
       prefix: cdktf.stringToTerraform(this._prefix),
       separator: cdktf.stringToTerraform(this._separator),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      length: {
+        value: cdktf.numberToHclTerraform(this._length),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      separator: {
+        value: cdktf.stringToHclTerraform(this._separator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

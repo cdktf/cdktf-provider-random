@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/id
 // generated from terraform resource schema
 
@@ -172,5 +167,31 @@ export class Id extends cdktf.TerraformResource {
       keepers: cdktf.hashMapper(cdktf.stringToTerraform)(this._keepers),
       prefix: cdktf.stringToTerraform(this._prefix),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      byte_length: {
+        value: cdktf.numberToHclTerraform(this._byteLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

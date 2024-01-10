@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/shuffle
 // generated from terraform resource schema
 
@@ -183,5 +178,37 @@ export class Shuffle extends cdktf.TerraformResource {
       result_count: cdktf.numberToTerraform(this._resultCount),
       seed: cdktf.stringToTerraform(this._seed),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      input: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._input),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      result_count: {
+        value: cdktf.numberToHclTerraform(this._resultCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      seed: {
+        value: cdktf.stringToHclTerraform(this._seed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/integer
 // generated from terraform resource schema
 
@@ -178,5 +173,37 @@ export class Integer extends cdktf.TerraformResource {
       min: cdktf.numberToTerraform(this._min),
       seed: cdktf.stringToTerraform(this._seed),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      keepers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._keepers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      max: {
+        value: cdktf.numberToHclTerraform(this._max),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min: {
+        value: cdktf.numberToHclTerraform(this._min),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      seed: {
+        value: cdktf.stringToHclTerraform(this._seed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
