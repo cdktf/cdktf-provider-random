@@ -39,7 +39,10 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-random-go`](https://github.com/cdktf/cdktf-provider-random-go) package.
 
-`go get github.com/cdktf/cdktf-provider-random-go/random`
+`go get github.com/cdktf/cdktf-provider-random-go/random/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-random-go/blob/main/random/go.mod#L1) file.
 
 ## Docs
 
