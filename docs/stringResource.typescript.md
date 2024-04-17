@@ -4,7 +4,7 @@
 
 ### StringResource <a name="StringResource" id="@cdktf/provider-random.stringResource.StringResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string random_string}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string random_string}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.stringResource.StringResource.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the StringResource to import.
 
 The id of the existing StringResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1053,8 +1053,8 @@ const stringResourceConfig: stringResource.StringResourceConfig = { ... }
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minNumeric">minNumeric</a></code> | <code>number</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minSpecial">minSpecial</a></code> | <code>number</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minUpper">minUpper</a></code> | <code>number</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">number</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">numeric</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include numeric characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">number</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">numeric</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.overrideSpecial">overrideSpecial</a></code> | <code>string</code> | Supply your own list of special characters to use for string generation. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">special</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">upper</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
@@ -1143,7 +1143,7 @@ The length of the string desired.
 
 The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#length StringResource#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#length StringResource#length}
 
 ---
 
@@ -1159,7 +1159,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#keepers StringResource#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#keepers StringResource#keepers}
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly lower: boolean | IResolvable;
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#lower StringResource#lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#lower StringResource#lower}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly minLower: number;
 
 Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#min_lower StringResource#min_lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#min_lower StringResource#min_lower}
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly minNumeric: number;
 
 Minimum number of numeric characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#min_numeric StringResource#min_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#min_numeric StringResource#min_numeric}
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly minSpecial: number;
 
 Minimum number of special characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#min_special StringResource#min_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#min_special StringResource#min_special}
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly minUpper: number;
 
 Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#min_upper StringResource#min_upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#min_upper StringResource#min_upper}
 
 ---
 
@@ -1241,9 +1241,11 @@ public readonly number: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
+Include numeric characters in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#number StringResource#number}
+Default value is `true`. If `number`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`. **NOTE**: This is deprecated, use `numeric` instead.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#number StringResource#number}
 
 ---
 
@@ -1255,9 +1257,11 @@ public readonly numeric: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Include numeric characters in the result. Default value is `true`.
+Include numeric characters in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#numeric StringResource#numeric}
+Default value is `true`. If `numeric`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#numeric StringResource#numeric}
 
 ---
 
@@ -1273,7 +1277,7 @@ Supply your own list of special characters to use for string generation.
 
 This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#override_special StringResource#override_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#override_special StringResource#override_special}
 
 ---
 
@@ -1287,7 +1291,7 @@ public readonly special: boolean | IResolvable;
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#special StringResource#special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#special StringResource#special}
 
 ---
 
@@ -1301,7 +1305,7 @@ public readonly upper: boolean | IResolvable;
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/string#upper StringResource#upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/string#upper StringResource#upper}
 
 ---
 

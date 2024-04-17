@@ -4,7 +4,7 @@
 
 ### Password <a name="Password" id="@cdktf/provider-random.password.Password"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password random_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password random_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.password.Password.Initializer"></a>
 
@@ -61,8 +61,8 @@ Password.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.minNumeric">minNumeric</a></code> | <code>java.lang.Number</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.minSpecial">minSpecial</a></code> | <code>java.lang.Number</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.minUpper">minUpper</a></code> | <code>java.lang.Number</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead. |
-| <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.overrideSpecial">overrideSpecial</a></code> | <code>java.lang.String</code> | Supply your own list of special characters to use for string generation. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.special">special</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.password.Password.Initializer.parameter.upper">upper</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
@@ -137,7 +137,7 @@ The length of the string desired.
 
 The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#length Password#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#length Password#length}
 
 ---
 
@@ -149,7 +149,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#keepers Password#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#keepers Password#keepers}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#lower Password#lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#lower Password#lower}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_lower Password#min_lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_lower Password#min_lower}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum number of numeric characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_numeric Password#min_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_numeric Password#min_numeric}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum number of special characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_special Password#min_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_special Password#min_special}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_upper Password#min_upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_upper Password#min_upper}
 
 ---
 
@@ -207,9 +207,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
+Include numeric characters in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#number Password#number}
+Default value is `true`. If `number`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`. **NOTE**: This is deprecated, use `numeric` instead.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#number Password#number}
 
 ---
 
@@ -217,9 +219,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Include numeric characters in the result. Default value is `true`.
+Include numeric characters in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#numeric Password#numeric}
+Default value is `true`. If `numeric`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#numeric Password#numeric}
 
 ---
 
@@ -231,7 +235,7 @@ Supply your own list of special characters to use for string generation.
 
 This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#override_special Password#override_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#override_special Password#override_special}
 
 ---
 
@@ -241,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#special Password#special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#special Password#special}
 
 ---
 
@@ -251,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#upper Password#upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#upper Password#upper}
 
 ---
 
@@ -755,7 +759,7 @@ The construct id used in the generated config for the Password to import.
 
 The id of the existing Password that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1304,8 +1308,8 @@ PasswordConfig.builder()
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.minNumeric">minNumeric</a></code> | <code>java.lang.Number</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.minSpecial">minSpecial</a></code> | <code>java.lang.Number</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.minUpper">minUpper</a></code> | <code>java.lang.Number</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead. |
-| <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.overrideSpecial">overrideSpecial</a></code> | <code>java.lang.String</code> | Supply your own list of special characters to use for string generation. |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.special">special</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.password.PasswordConfig.property.upper">upper</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
@@ -1394,7 +1398,7 @@ The length of the string desired.
 
 The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#length Password#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#length Password#length}
 
 ---
 
@@ -1410,7 +1414,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#keepers Password#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#keepers Password#keepers}
 
 ---
 
@@ -1424,7 +1428,7 @@ public java.lang.Object getLower();
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#lower Password#lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#lower Password#lower}
 
 ---
 
@@ -1438,7 +1442,7 @@ public java.lang.Number getMinLower();
 
 Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_lower Password#min_lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_lower Password#min_lower}
 
 ---
 
@@ -1452,7 +1456,7 @@ public java.lang.Number getMinNumeric();
 
 Minimum number of numeric characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_numeric Password#min_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_numeric Password#min_numeric}
 
 ---
 
@@ -1466,7 +1470,7 @@ public java.lang.Number getMinSpecial();
 
 Minimum number of special characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_special Password#min_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_special Password#min_special}
 
 ---
 
@@ -1480,7 +1484,7 @@ public java.lang.Number getMinUpper();
 
 Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#min_upper Password#min_upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#min_upper Password#min_upper}
 
 ---
 
@@ -1492,9 +1496,11 @@ public java.lang.Object getNumber();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
+Include numeric characters in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#number Password#number}
+Default value is `true`. If `number`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`. **NOTE**: This is deprecated, use `numeric` instead.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#number Password#number}
 
 ---
 
@@ -1506,9 +1512,11 @@ public java.lang.Object getNumeric();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Include numeric characters in the result. Default value is `true`.
+Include numeric characters in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#numeric Password#numeric}
+Default value is `true`. If `numeric`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#numeric Password#numeric}
 
 ---
 
@@ -1524,7 +1532,7 @@ Supply your own list of special characters to use for string generation.
 
 This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#override_special Password#override_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#override_special Password#override_special}
 
 ---
 
@@ -1538,7 +1546,7 @@ public java.lang.Object getSpecial();
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#special Password#special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#special Password#special}
 
 ---
 
@@ -1552,7 +1560,7 @@ public java.lang.Object getUpper();
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/password#upper Password#upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/password#upper Password#upper}
 
 ---
 
