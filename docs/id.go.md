@@ -4,12 +4,12 @@
 
 ### Id <a name="Id" id="@cdktf/provider-random.id.Id"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/id random_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/id random_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.id.Id.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/id"
+import "github.com/cdktf/cdktf-provider-random-go/random/id"
 
 id.NewId(scope Construct, id *string, config IdConfig) Id
 ```
@@ -392,7 +392,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.id.Id.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/id"
+import "github.com/cdktf/cdktf-provider-random-go/random/id"
 
 id.Id_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.id.Id.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/id"
+import "github.com/cdktf/cdktf-provider-random-go/random/id"
 
 id.Id_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ id.Id_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.id.Id.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/id"
+import "github.com/cdktf/cdktf-provider-random-go/random/id"
 
 id.Id_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ id.Id_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-random.id.Id.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/id"
+import "github.com/cdktf/cdktf-provider-random-go/random/id"
 
 id.Id_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Id to import.
 
 The id of the existing Id that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.id.IdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/id"
+import "github.com/cdktf/cdktf-provider-random-go/random/id"
 
 &id.IdConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ ByteLength *f64
 
 The number of random bytes to produce. The minimum value is 1, which produces eight bits of randomness.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/id#byte_length Id#byte_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/id#byte_length Id#byte_length}
 
 ---
 
@@ -931,7 +931,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/id#keepers Id#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/id#keepers Id#keepers}
 
 ---
 
@@ -947,7 +947,7 @@ Arbitrary string to prefix the output value with.
 
 This string is supplied as-is, meaning it is not guaranteed to be URL-safe or base64 encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.0/docs/resources/id#prefix Id#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.1/docs/resources/id#prefix Id#prefix}
 
 ---
 
