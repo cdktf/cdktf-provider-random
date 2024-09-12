@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer
+// https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface IntegerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer#keepers Integer#keepers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer#keepers Integer#keepers}
   */
   readonly keepers?: { [key: string]: string };
   /**
   * The maximum inclusive value of the range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer#max Integer#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer#max Integer#max}
   */
   readonly max: number;
   /**
   * The minimum inclusive value of the range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer#min Integer#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer#min Integer#min}
   */
   readonly min: number;
   /**
   * A custom seed to always produce the same value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer#seed Integer#seed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer#seed Integer#seed}
   */
   readonly seed?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer random_integer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer random_integer}
 */
 export class Integer extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class Integer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Integer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Integer to import
-  * @param importFromId The id of the existing Integer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Integer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Integer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class Integer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/integer random_integer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/integer random_integer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class Integer extends cdktf.TerraformResource {
       terraformResourceType: 'random_integer',
       terraformGeneratorMetadata: {
         providerName: 'random',
-        providerVersion: '3.6.2',
+        providerVersion: '3.6.3',
         providerVersionConstraint: '~> 3.1'
       },
       provider: config.provider,
