@@ -4,12 +4,12 @@
 
 ### Pet <a name="Pet" id="@cdktf/provider-random.pet.Pet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet random_pet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet random_pet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.pet.Pet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.NewPet(scope Construct, id *string, config PetConfig) Pet
 ```
@@ -406,7 +406,7 @@ func ResetSeparator()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.pet.Pet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.pet.Pet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ pet.Pet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.pet.Pet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ pet.Pet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-random.pet.Pet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 pet.Pet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Pet to import.
 
 The id of the existing Pet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.pet.PetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/pet"
+import "github.com/cdktf/cdktf-provider-random-go/random/pet"
 
 &pet.PetConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet#keepers Pet#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet#keepers Pet#keepers}
 
 ---
 
@@ -925,7 +925,7 @@ Length *f64
 
 The length (in words) of the pet name. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet#length Pet#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet#length Pet#length}
 
 ---
 
@@ -939,7 +939,7 @@ Prefix *string
 
 A string to prefix the name with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet#prefix Pet#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet#prefix Pet#prefix}
 
 ---
 
@@ -953,7 +953,7 @@ Separator *string
 
 The character to separate words in the pet name. Defaults to "-".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet#separator Pet#separator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet#separator Pet#separator}
 
 ---
 

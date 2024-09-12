@@ -4,12 +4,12 @@
 
 ### StringResource <a name="StringResource" id="@cdktf/provider-random.stringResource.StringResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string random_string}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string random_string}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.stringResource.StringResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
 
 stringresource.NewStringResource(scope Construct, id *string, config StringResourceConfig) StringResource
 ```
@@ -455,7 +455,7 @@ func ResetUpper()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.stringResource.StringResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
 
 stringresource.StringResource_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.stringResource.StringResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
 
 stringresource.StringResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ stringresource.StringResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.stringResource.StringResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
 
 stringresource.StringResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ stringresource.StringResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-random.stringResource.StringResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
 
 stringresource.StringResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the StringResource to import.
 
 The id of the existing StringResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.stringResource.StringResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
 
 &stringresource.StringResourceConfig {
 	Connection: interface{},
@@ -1163,7 +1163,7 @@ The length of the string desired.
 
 The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#length StringResource#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#length StringResource#length}
 
 ---
 
@@ -1179,7 +1179,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#keepers StringResource#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#keepers StringResource#keepers}
 
 ---
 
@@ -1193,7 +1193,7 @@ Lower interface{}
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#lower StringResource#lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#lower StringResource#lower}
 
 ---
 
@@ -1207,7 +1207,7 @@ MinLower *f64
 
 Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#min_lower StringResource#min_lower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#min_lower StringResource#min_lower}
 
 ---
 
@@ -1221,7 +1221,7 @@ MinNumeric *f64
 
 Minimum number of numeric characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#min_numeric StringResource#min_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#min_numeric StringResource#min_numeric}
 
 ---
 
@@ -1235,7 +1235,7 @@ MinSpecial *f64
 
 Minimum number of special characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#min_special StringResource#min_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#min_special StringResource#min_special}
 
 ---
 
@@ -1249,7 +1249,7 @@ MinUpper *f64
 
 Minimum number of uppercase alphabet characters in the result. Default value is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#min_upper StringResource#min_upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#min_upper StringResource#min_upper}
 
 ---
 
@@ -1265,7 +1265,7 @@ Include numeric characters in the result.
 
 Default value is `true`. If `number`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`. **NOTE**: This is deprecated, use `numeric` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#number StringResource#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#number StringResource#number}
 
 ---
 
@@ -1281,7 +1281,7 @@ Include numeric characters in the result.
 
 Default value is `true`. If `numeric`, `upper`, `lower`, and `special` are all configured, at least one of them must be set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#numeric StringResource#numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#numeric StringResource#numeric}
 
 ---
 
@@ -1297,7 +1297,7 @@ Supply your own list of special characters to use for string generation.
 
 This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#override_special StringResource#override_special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#override_special StringResource#override_special}
 
 ---
 
@@ -1311,7 +1311,7 @@ Special interface{}
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#special StringResource#special}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#special StringResource#special}
 
 ---
 
@@ -1325,7 +1325,7 @@ Upper interface{}
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/string#upper StringResource#upper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/string#upper StringResource#upper}
 
 ---
 
