@@ -4,7 +4,7 @@
 
 ### Shuffle <a name="Shuffle" id="@cdktf/provider-random.shuffle.Shuffle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle random_shuffle}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/shuffle random_shuffle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.shuffle.Shuffle.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Shuffle to import.
 
 The id of the existing Shuffle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/shuffle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ public string[] Input { get; set; }
 
 The list of strings to shuffle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle#input Shuffle#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/shuffle#input Shuffle#input}
 
 ---
 
@@ -929,7 +929,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle#keepers Shuffle#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/shuffle#keepers Shuffle#keepers}
 
 ---
 
@@ -945,7 +945,7 @@ The number of results to return.
 
 Defaults to the number of items in the `input` list. If fewer items are requested, some elements will be excluded from the result. If more items are requested, items will be repeated in the result but not more frequently than the number of items in the input list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle#result_count Shuffle#result_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/shuffle#result_count Shuffle#result_count}
 
 ---
 
@@ -961,7 +961,7 @@ Arbitrary string with which to seed the random number generator, in order to pro
 
 **Important:** Even with an identical seed, it is not guaranteed that the same permutation will be produced across different versions of Terraform. This argument causes the result to be *less volatile*, but not fixed for all time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle#seed Shuffle#seed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/shuffle#seed Shuffle#seed}
 
 ---
 
