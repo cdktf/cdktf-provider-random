@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.stringResource.StringResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
 
 stringresource.NewStringResource(scope Construct, id *string, config StringResourceConfig) StringResource
 ```
@@ -455,7 +455,7 @@ func ResetUpper()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-random.stringResource.StringResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
 
 stringresource.StringResource_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-random.stringResource.StringResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
 
 stringresource.StringResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ stringresource.StringResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-random.stringResource.StringResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
 
 stringresource.StringResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ stringresource.StringResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-random.stringResource.StringResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
 
 stringresource.StringResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-random.stringResource.StringResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-random-go/random/stringresource"
+import "github.com/cdktf/cdktf-provider-random-go/random/v11/stringresource"
 
 &stringresource.StringResourceConfig {
 	Connection: interface{},
