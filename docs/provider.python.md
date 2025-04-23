@@ -4,7 +4,7 @@
 
 ### RandomProvider <a name="RandomProvider" id="@cdktf/provider-random.provider.RandomProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs random}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs random}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.provider.RandomProvider.Initializer"></a>
 
@@ -50,7 +50,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs#alias RandomProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs#alias RandomProvider#alias}
 
 ---
 
@@ -264,7 +264,7 @@ The construct id used in the generated config for the RandomProvider to import.
 
 The id of the existing RandomProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -445,7 +445,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs#alias RandomProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs#alias RandomProvider#alias}
 
 ---
 
