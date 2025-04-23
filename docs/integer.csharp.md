@@ -4,7 +4,7 @@
 
 ### Integer <a name="Integer" id="@cdktf/provider-random.integer.Integer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/integer random_integer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/integer random_integer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-random.integer.Integer.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Integer to import.
 
 The id of the existing Integer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/integer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/integer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ public double Max { get; set; }
 
 The maximum inclusive value of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/integer#max Integer#max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/integer#max Integer#max}
 
 ---
 
@@ -920,7 +920,7 @@ public double Min { get; set; }
 
 The minimum inclusive value of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/integer#min Integer#min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/integer#min Integer#min}
 
 ---
 
@@ -936,7 +936,7 @@ Arbitrary map of values that, when changed, will trigger recreation of resource.
 
 See [the main provider documentation](../index.html) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/integer#keepers Integer#keepers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/integer#keepers Integer#keepers}
 
 ---
 
@@ -950,7 +950,7 @@ public string Seed { get; set; }
 
 A custom seed to always produce the same value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.1/docs/resources/integer#seed Integer#seed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/integer#seed Integer#seed}
 
 ---
 
