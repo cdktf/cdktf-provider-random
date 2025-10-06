@@ -12,34 +12,25 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7
 import com.hashicorp.cdktf.providers.random_provider.string_resource.StringResource;
 
 StringResource.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .length(java.lang.Number)
 //  .keepers(java.util.Map<java.lang.String, java.lang.String>)
-//  .lower(java.lang.Boolean)
-//  .lower(IResolvable)
+//  .lower(java.lang.Boolean|IResolvable)
 //  .minLower(java.lang.Number)
 //  .minNumeric(java.lang.Number)
 //  .minSpecial(java.lang.Number)
 //  .minUpper(java.lang.Number)
-//  .number(java.lang.Boolean)
-//  .number(IResolvable)
-//  .numeric(java.lang.Boolean)
-//  .numeric(IResolvable)
+//  .number(java.lang.Boolean|IResolvable)
+//  .numeric(java.lang.Boolean|IResolvable)
 //  .overrideSpecial(java.lang.String)
-//  .special(java.lang.Boolean)
-//  .special(IResolvable)
-//  .upper(java.lang.Boolean)
-//  .upper(IResolvable)
+//  .special(java.lang.Boolean|IResolvable)
+//  .upper(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -47,25 +38,25 @@ StringResource.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.length">length</a></code> | <code>java.lang.Number</code> | The length of the string desired. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.keepers">keepers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Arbitrary map of values that, when changed, will trigger recreation of resource. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lower">lower</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lower">lower</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minLower">minLower</a></code> | <code>java.lang.Number</code> | Minimum number of lowercase alphabet characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minNumeric">minNumeric</a></code> | <code>java.lang.Number</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minSpecial">minSpecial</a></code> | <code>java.lang.Number</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minUpper">minUpper</a></code> | <code>java.lang.Number</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.number">number</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.numeric">numeric</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.overrideSpecial">overrideSpecial</a></code> | <code>java.lang.String</code> | Supply your own list of special characters to use for string generation. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.special">special</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.upper">upper</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.special">special</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.upper">upper</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
 
 ---
 
@@ -89,13 +80,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -125,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -155,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `lower`<sup>Optional</sup> <a name="lower" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lower"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
@@ -205,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `number`<sup>Optional</sup> <a name="number" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.number"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -217,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `numeric`<sup>Optional</sup> <a name="numeric" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.numeric"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -241,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `special`<sup>Optional</sup> <a name="special" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.special"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
@@ -251,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `upper`<sup>Optional</sup> <a name="upper" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.upper"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
@@ -497,7 +488,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-random.stringResource.StringResource.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-random.stringResource.StringResource.importFrom"></a>
@@ -553,7 +544,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -568,7 +559,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-random.stringResource.StringResource.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -782,39 +773,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.result">result</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.keepersInput">keepersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lengthInput">lengthInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lowerInput">lowerInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lowerInput">lowerInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minLowerInput">minLowerInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minNumericInput">minNumericInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minSpecialInput">minSpecialInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minUpperInput">minUpperInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numberInput">numberInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numericInput">numericInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numberInput">numberInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numericInput">numericInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.overrideSpecialInput">overrideSpecialInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.specialInput">specialInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upperInput">upperInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.specialInput">specialInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upperInput">upperInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.keepers">keepers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.length">length</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lower">lower</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lower">lower</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minLower">minLower</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minNumeric">minNumeric</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minSpecial">minSpecial</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minUpper">minUpper</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.number">number</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numeric">numeric</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.overrideSpecial">overrideSpecial</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.special">special</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upper">upper</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.special">special</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upper">upper</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -893,20 +884,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-random.stringResource.StringResource.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.stringResource.StringResource.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -953,10 +944,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-random.stringResource.StringResource.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1003,10 +994,10 @@ public java.lang.Number getLengthInput();
 ##### `lowerInput`<sup>Optional</sup> <a name="lowerInput" id="@cdktf/provider-random.stringResource.StringResource.property.lowerInput"></a>
 
 ```java
-public java.lang.Object getLowerInput();
+public java.lang.Boolean|IResolvable getLowerInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1053,20 +1044,20 @@ public java.lang.Number getMinUpperInput();
 ##### `numberInput`<sup>Optional</sup> <a name="numberInput" id="@cdktf/provider-random.stringResource.StringResource.property.numberInput"></a>
 
 ```java
-public java.lang.Object getNumberInput();
+public java.lang.Boolean|IResolvable getNumberInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `numericInput`<sup>Optional</sup> <a name="numericInput" id="@cdktf/provider-random.stringResource.StringResource.property.numericInput"></a>
 
 ```java
-public java.lang.Object getNumericInput();
+public java.lang.Boolean|IResolvable getNumericInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1083,20 +1074,20 @@ public java.lang.String getOverrideSpecialInput();
 ##### `specialInput`<sup>Optional</sup> <a name="specialInput" id="@cdktf/provider-random.stringResource.StringResource.property.specialInput"></a>
 
 ```java
-public java.lang.Object getSpecialInput();
+public java.lang.Boolean|IResolvable getSpecialInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `upperInput`<sup>Optional</sup> <a name="upperInput" id="@cdktf/provider-random.stringResource.StringResource.property.upperInput"></a>
 
 ```java
-public java.lang.Object getUpperInput();
+public java.lang.Boolean|IResolvable getUpperInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1123,10 +1114,10 @@ public java.lang.Number getLength();
 ##### `lower`<sup>Required</sup> <a name="lower" id="@cdktf/provider-random.stringResource.StringResource.property.lower"></a>
 
 ```java
-public java.lang.Object getLower();
+public java.lang.Boolean|IResolvable getLower();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1173,20 +1164,20 @@ public java.lang.Number getMinUpper();
 ##### `number`<sup>Required</sup> <a name="number" id="@cdktf/provider-random.stringResource.StringResource.property.number"></a>
 
 ```java
-public java.lang.Object getNumber();
+public java.lang.Boolean|IResolvable getNumber();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `numeric`<sup>Required</sup> <a name="numeric" id="@cdktf/provider-random.stringResource.StringResource.property.numeric"></a>
 
 ```java
-public java.lang.Object getNumeric();
+public java.lang.Boolean|IResolvable getNumeric();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1203,20 +1194,20 @@ public java.lang.String getOverrideSpecial();
 ##### `special`<sup>Required</sup> <a name="special" id="@cdktf/provider-random.stringResource.StringResource.property.special"></a>
 
 ```java
-public java.lang.Object getSpecial();
+public java.lang.Boolean|IResolvable getSpecial();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `upper`<sup>Required</sup> <a name="upper" id="@cdktf/provider-random.stringResource.StringResource.property.upper"></a>
 
 ```java
-public java.lang.Object getUpper();
+public java.lang.Boolean|IResolvable getUpper();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1248,34 +1239,25 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.random_provider.string_resource.StringResourceConfig;
 
 StringResourceConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .length(java.lang.Number)
 //  .keepers(java.util.Map<java.lang.String, java.lang.String>)
-//  .lower(java.lang.Boolean)
-//  .lower(IResolvable)
+//  .lower(java.lang.Boolean|IResolvable)
 //  .minLower(java.lang.Number)
 //  .minNumeric(java.lang.Number)
 //  .minSpecial(java.lang.Number)
 //  .minUpper(java.lang.Number)
-//  .number(java.lang.Boolean)
-//  .number(IResolvable)
-//  .numeric(java.lang.Boolean)
-//  .numeric(IResolvable)
+//  .number(java.lang.Boolean|IResolvable)
+//  .numeric(java.lang.Boolean|IResolvable)
 //  .overrideSpecial(java.lang.String)
-//  .special(java.lang.Boolean)
-//  .special(IResolvable)
-//  .upper(java.lang.Boolean)
-//  .upper(IResolvable)
+//  .special(java.lang.Boolean|IResolvable)
+//  .upper(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1283,45 +1265,45 @@ StringResourceConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.length">length</a></code> | <code>java.lang.Number</code> | The length of the string desired. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.keepers">keepers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Arbitrary map of values that, when changed, will trigger recreation of resource. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lower">lower</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lower">lower</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minLower">minLower</a></code> | <code>java.lang.Number</code> | Minimum number of lowercase alphabet characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minNumeric">minNumeric</a></code> | <code>java.lang.Number</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minSpecial">minSpecial</a></code> | <code>java.lang.Number</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minUpper">minUpper</a></code> | <code>java.lang.Number</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">number</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">numeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">number</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">numeric</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.overrideSpecial">overrideSpecial</a></code> | <code>java.lang.String</code> | Supply your own list of special characters to use for string generation. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">special</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">upper</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">special</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">upper</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1368,10 +1350,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1410,10 +1392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lower`<sup>Optional</sup> <a name="lower" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.lower"></a>
 
 ```java
-public java.lang.Object getLower();
+public java.lang.Boolean|IResolvable getLower();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
@@ -1480,10 +1462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `number`<sup>Optional</sup> <a name="number" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.number"></a>
 
 ```java
-public java.lang.Object getNumber();
+public java.lang.Boolean|IResolvable getNumber();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -1496,10 +1478,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `numeric`<sup>Optional</sup> <a name="numeric" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric"></a>
 
 ```java
-public java.lang.Object getNumeric();
+public java.lang.Boolean|IResolvable getNumeric();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -1528,10 +1510,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `special`<sup>Optional</sup> <a name="special" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.special"></a>
 
 ```java
-public java.lang.Object getSpecial();
+public java.lang.Boolean|IResolvable getSpecial();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
@@ -1542,10 +1524,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `upper`<sup>Optional</sup> <a name="upper" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.upper"></a>
 
 ```java
-public java.lang.Object getUpper();
+public java.lang.Boolean|IResolvable getUpper();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 

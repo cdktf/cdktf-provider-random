@@ -284,7 +284,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-random.stringResource.StringResource.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-random.stringResource.StringResource.importFrom"></a>
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-random.stringResource.StringResource.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-random.stringResource.StringResource.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -567,39 +567,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.result">Result</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.keepersInput">KeepersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lengthInput">LengthInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lowerInput">LowerInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lowerInput">LowerInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minLowerInput">MinLowerInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minNumericInput">MinNumericInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minSpecialInput">MinSpecialInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minUpperInput">MinUpperInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numberInput">NumberInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numericInput">NumericInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numberInput">NumberInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numericInput">NumericInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.overrideSpecialInput">OverrideSpecialInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.specialInput">SpecialInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upperInput">UpperInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.specialInput">SpecialInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upperInput">UpperInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.keepers">Keepers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.length">Length</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lower">Lower</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lower">Lower</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minLower">MinLower</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minNumeric">MinNumeric</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minSpecial">MinSpecial</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minUpper">MinUpper</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.number">Number</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numeric">Numeric</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.number">Number</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numeric">Numeric</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.overrideSpecial">OverrideSpecial</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.special">Special</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upper">Upper</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.special">Special</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upper">Upper</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -678,20 +678,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-random.stringResource.StringResource.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.stringResource.StringResource.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -738,10 +738,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-random.stringResource.StringResource.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -788,10 +788,10 @@ public double LengthInput { get; }
 ##### `LowerInput`<sup>Optional</sup> <a name="LowerInput" id="@cdktf/provider-random.stringResource.StringResource.property.lowerInput"></a>
 
 ```csharp
-public object LowerInput { get; }
+public bool|IResolvable LowerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -838,20 +838,20 @@ public double MinUpperInput { get; }
 ##### `NumberInput`<sup>Optional</sup> <a name="NumberInput" id="@cdktf/provider-random.stringResource.StringResource.property.numberInput"></a>
 
 ```csharp
-public object NumberInput { get; }
+public bool|IResolvable NumberInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NumericInput`<sup>Optional</sup> <a name="NumericInput" id="@cdktf/provider-random.stringResource.StringResource.property.numericInput"></a>
 
 ```csharp
-public object NumericInput { get; }
+public bool|IResolvable NumericInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -868,20 +868,20 @@ public string OverrideSpecialInput { get; }
 ##### `SpecialInput`<sup>Optional</sup> <a name="SpecialInput" id="@cdktf/provider-random.stringResource.StringResource.property.specialInput"></a>
 
 ```csharp
-public object SpecialInput { get; }
+public bool|IResolvable SpecialInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UpperInput`<sup>Optional</sup> <a name="UpperInput" id="@cdktf/provider-random.stringResource.StringResource.property.upperInput"></a>
 
 ```csharp
-public object UpperInput { get; }
+public bool|IResolvable UpperInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -908,10 +908,10 @@ public double Length { get; }
 ##### `Lower`<sup>Required</sup> <a name="Lower" id="@cdktf/provider-random.stringResource.StringResource.property.lower"></a>
 
 ```csharp
-public object Lower { get; }
+public bool|IResolvable Lower { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -958,20 +958,20 @@ public double MinUpper { get; }
 ##### `Number`<sup>Required</sup> <a name="Number" id="@cdktf/provider-random.stringResource.StringResource.property.number"></a>
 
 ```csharp
-public object Number { get; }
+public bool|IResolvable Number { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Numeric`<sup>Required</sup> <a name="Numeric" id="@cdktf/provider-random.stringResource.StringResource.property.numeric"></a>
 
 ```csharp
-public object Numeric { get; }
+public bool|IResolvable Numeric { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -988,20 +988,20 @@ public string OverrideSpecial { get; }
 ##### `Special`<sup>Required</sup> <a name="Special" id="@cdktf/provider-random.stringResource.StringResource.property.special"></a>
 
 ```csharp
-public object Special { get; }
+public bool|IResolvable Special { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Upper`<sup>Required</sup> <a name="Upper" id="@cdktf/provider-random.stringResource.StringResource.property.upper"></a>
 
 ```csharp
-public object Upper { get; }
+public bool|IResolvable Upper { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1033,25 +1033,25 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Random;
 
 new StringResourceConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     double Length,
     System.Collections.Generic.IDictionary<string, string> Keepers = null,
-    object Lower = null,
+    bool|IResolvable Lower = null,
     double MinLower = null,
     double MinNumeric = null,
     double MinSpecial = null,
     double MinUpper = null,
-    object Number = null,
-    object Numeric = null,
+    bool|IResolvable Number = null,
+    bool|IResolvable Numeric = null,
     string OverrideSpecial = null,
-    object Special = null,
-    object Upper = null
+    bool|IResolvable Special = null,
+    bool|IResolvable Upper = null
 };
 ```
 
@@ -1059,45 +1059,45 @@ new StringResourceConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.length">Length</a></code> | <code>double</code> | The length of the string desired. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.keepers">Keepers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Arbitrary map of values that, when changed, will trigger recreation of resource. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lower">Lower</a></code> | <code>object</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lower">Lower</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minLower">MinLower</a></code> | <code>double</code> | Minimum number of lowercase alphabet characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minNumeric">MinNumeric</a></code> | <code>double</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minSpecial">MinSpecial</a></code> | <code>double</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minUpper">MinUpper</a></code> | <code>double</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">Number</a></code> | <code>object</code> | Include numeric characters in the result. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">Numeric</a></code> | <code>object</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">Number</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">Numeric</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.overrideSpecial">OverrideSpecial</a></code> | <code>string</code> | Supply your own list of special characters to use for string generation. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">Special</a></code> | <code>object</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">Upper</a></code> | <code>object</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">Special</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">Upper</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1144,10 +1144,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1186,10 +1186,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Lower`<sup>Optional</sup> <a name="Lower" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.lower"></a>
 
 ```csharp
-public object Lower { get; set; }
+public bool|IResolvable Lower { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
@@ -1256,10 +1256,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Number`<sup>Optional</sup> <a name="Number" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.number"></a>
 
 ```csharp
-public object Number { get; set; }
+public bool|IResolvable Number { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -1272,10 +1272,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Numeric`<sup>Optional</sup> <a name="Numeric" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric"></a>
 
 ```csharp
-public object Numeric { get; set; }
+public bool|IResolvable Numeric { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -1304,10 +1304,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Special`<sup>Optional</sup> <a name="Special" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.special"></a>
 
 ```csharp
-public object Special { get; set; }
+public bool|IResolvable Special { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
@@ -1318,10 +1318,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Upper`<sup>Optional</sup> <a name="Upper" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.upper"></a>
 
 ```csharp
-public object Upper { get; set; }
+public bool|IResolvable Upper { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
