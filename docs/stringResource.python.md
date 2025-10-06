@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_random import string_resource
 stringResource.StringResource(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   length: typing.Union[int, float],
   keepers: typing.Mapping[str] = None,
-  lower: typing.Union[bool, IResolvable] = None,
+  lower: bool | IResolvable = None,
   min_lower: typing.Union[int, float] = None,
   min_numeric: typing.Union[int, float] = None,
   min_special: typing.Union[int, float] = None,
   min_upper: typing.Union[int, float] = None,
-  number: typing.Union[bool, IResolvable] = None,
-  numeric: typing.Union[bool, IResolvable] = None,
+  number: bool | IResolvable = None,
+  numeric: bool | IResolvable = None,
   override_special: str = None,
-  special: typing.Union[bool, IResolvable] = None,
-  upper: typing.Union[bool, IResolvable] = None
+  special: bool | IResolvable = None,
+  upper: bool | IResolvable = None
 )
 ```
 
@@ -40,25 +40,25 @@ stringResource.StringResource(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.length">length</a></code> | <code>typing.Union[int, float]</code> | The length of the string desired. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.keepers">keepers</a></code> | <code>typing.Mapping[str]</code> | Arbitrary map of values that, when changed, will trigger recreation of resource. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lower">lower</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lower">lower</a></code> | <code>bool \| cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minLower">min_lower</a></code> | <code>typing.Union[int, float]</code> | Minimum number of lowercase alphabet characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minNumeric">min_numeric</a></code> | <code>typing.Union[int, float]</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minSpecial">min_special</a></code> | <code>typing.Union[int, float]</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.minUpper">min_upper</a></code> | <code>typing.Union[int, float]</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.number">number</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include numeric characters in the result. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.numeric">numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.number">number</a></code> | <code>bool \| cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.numeric">numeric</a></code> | <code>bool \| cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.overrideSpecial">override_special</a></code> | <code>str</code> | Supply your own list of special characters to use for string generation. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.special">special</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.upper">upper</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.special">special</a></code> | <code>bool \| cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.upper">upper</a></code> | <code>bool \| cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
 
 ---
 
@@ -82,13 +82,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `lower`<sup>Optional</sup> <a name="lower" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.lower"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `number`<sup>Optional</sup> <a name="number" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.number"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `numeric`<sup>Optional</sup> <a name="numeric" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.numeric"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `special`<sup>Optional</sup> <a name="special" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.special"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `upper`<sup>Optional</sup> <a name="upper" id="@cdktf/provider-random.stringResource.StringResource.Initializer.parameter.upper"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
@@ -515,7 +515,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-random.stringResource.StringResource.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-random.stringResource.StringResource.importFrom"></a>
@@ -578,7 +578,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -594,7 +594,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-random.stringResource.StringResource.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -821,39 +821,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/random/3.7
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.result">result</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.keepersInput">keepers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lengthInput">length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lowerInput">lower_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lowerInput">lower_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minLowerInput">min_lower_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minNumericInput">min_numeric_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minSpecialInput">min_special_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minUpperInput">min_upper_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numberInput">number_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numericInput">numeric_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numberInput">number_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numericInput">numeric_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.overrideSpecialInput">override_special_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.specialInput">special_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upperInput">upper_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.specialInput">special_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upperInput">upper_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.keepers">keepers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.length">length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lower">lower</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.lower">lower</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minLower">min_lower</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minNumeric">min_numeric</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minSpecial">min_special</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.minUpper">min_upper</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.number">number</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numeric">numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.number">number</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.numeric">numeric</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.overrideSpecial">override_special</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.special">special</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upper">upper</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.special">special</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResource.property.upper">upper</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -932,20 +932,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-random.stringResource.StringResource.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.stringResource.StringResource.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -992,10 +992,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-random.stringResource.StringResource.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1042,10 +1042,10 @@ length_input: typing.Union[int, float]
 ##### `lower_input`<sup>Optional</sup> <a name="lower_input" id="@cdktf/provider-random.stringResource.StringResource.property.lowerInput"></a>
 
 ```python
-lower_input: typing.Union[bool, IResolvable]
+lower_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1092,20 +1092,20 @@ min_upper_input: typing.Union[int, float]
 ##### `number_input`<sup>Optional</sup> <a name="number_input" id="@cdktf/provider-random.stringResource.StringResource.property.numberInput"></a>
 
 ```python
-number_input: typing.Union[bool, IResolvable]
+number_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `numeric_input`<sup>Optional</sup> <a name="numeric_input" id="@cdktf/provider-random.stringResource.StringResource.property.numericInput"></a>
 
 ```python
-numeric_input: typing.Union[bool, IResolvable]
+numeric_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1122,20 +1122,20 @@ override_special_input: str
 ##### `special_input`<sup>Optional</sup> <a name="special_input" id="@cdktf/provider-random.stringResource.StringResource.property.specialInput"></a>
 
 ```python
-special_input: typing.Union[bool, IResolvable]
+special_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `upper_input`<sup>Optional</sup> <a name="upper_input" id="@cdktf/provider-random.stringResource.StringResource.property.upperInput"></a>
 
 ```python
-upper_input: typing.Union[bool, IResolvable]
+upper_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1162,10 +1162,10 @@ length: typing.Union[int, float]
 ##### `lower`<sup>Required</sup> <a name="lower" id="@cdktf/provider-random.stringResource.StringResource.property.lower"></a>
 
 ```python
-lower: typing.Union[bool, IResolvable]
+lower: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1212,20 +1212,20 @@ min_upper: typing.Union[int, float]
 ##### `number`<sup>Required</sup> <a name="number" id="@cdktf/provider-random.stringResource.StringResource.property.number"></a>
 
 ```python
-number: typing.Union[bool, IResolvable]
+number: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `numeric`<sup>Required</sup> <a name="numeric" id="@cdktf/provider-random.stringResource.StringResource.property.numeric"></a>
 
 ```python
-numeric: typing.Union[bool, IResolvable]
+numeric: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1242,20 +1242,20 @@ override_special: str
 ##### `special`<sup>Required</sup> <a name="special" id="@cdktf/provider-random.stringResource.StringResource.property.special"></a>
 
 ```python
-special: typing.Union[bool, IResolvable]
+special: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `upper`<sup>Required</sup> <a name="upper" id="@cdktf/provider-random.stringResource.StringResource.property.upper"></a>
 
 ```python
-upper: typing.Union[bool, IResolvable]
+upper: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1287,25 +1287,25 @@ tfResourceType: str
 from cdktf_cdktf_provider_random import string_resource
 
 stringResource.StringResourceConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   length: typing.Union[int, float],
   keepers: typing.Mapping[str] = None,
-  lower: typing.Union[bool, IResolvable] = None,
+  lower: bool | IResolvable = None,
   min_lower: typing.Union[int, float] = None,
   min_numeric: typing.Union[int, float] = None,
   min_special: typing.Union[int, float] = None,
   min_upper: typing.Union[int, float] = None,
-  number: typing.Union[bool, IResolvable] = None,
-  numeric: typing.Union[bool, IResolvable] = None,
+  number: bool | IResolvable = None,
+  numeric: bool | IResolvable = None,
   override_special: str = None,
-  special: typing.Union[bool, IResolvable] = None,
-  upper: typing.Union[bool, IResolvable] = None
+  special: bool | IResolvable = None,
+  upper: bool | IResolvable = None
 )
 ```
 
@@ -1313,45 +1313,45 @@ stringResource.StringResourceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.length">length</a></code> | <code>typing.Union[int, float]</code> | The length of the string desired. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.keepers">keepers</a></code> | <code>typing.Mapping[str]</code> | Arbitrary map of values that, when changed, will trigger recreation of resource. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lower">lower</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.lower">lower</a></code> | <code>bool \| cdktf.IResolvable</code> | Include lowercase alphabet characters in the result. Default value is `true`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minLower">min_lower</a></code> | <code>typing.Union[int, float]</code> | Minimum number of lowercase alphabet characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minNumeric">min_numeric</a></code> | <code>typing.Union[int, float]</code> | Minimum number of numeric characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minSpecial">min_special</a></code> | <code>typing.Union[int, float]</code> | Minimum number of special characters in the result. Default value is `0`. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.minUpper">min_upper</a></code> | <code>typing.Union[int, float]</code> | Minimum number of uppercase alphabet characters in the result. Default value is `0`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">number</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include numeric characters in the result. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.number">number</a></code> | <code>bool \| cdktf.IResolvable</code> | Include numeric characters in the result. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric">numeric</a></code> | <code>bool \| cdktf.IResolvable</code> | Include numeric characters in the result. |
 | <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.overrideSpecial">override_special</a></code> | <code>str</code> | Supply your own list of special characters to use for string generation. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">special</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
-| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">upper</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.special">special</a></code> | <code>bool \| cdktf.IResolvable</code> | Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`. |
+| <code><a href="#@cdktf/provider-random.stringResource.StringResourceConfig.property.upper">upper</a></code> | <code>bool \| cdktf.IResolvable</code> | Include uppercase alphabet characters in the result. Default value is `true`. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1398,10 +1398,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1440,10 +1440,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `lower`<sup>Optional</sup> <a name="lower" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.lower"></a>
 
 ```python
-lower: typing.Union[bool, IResolvable]
+lower: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include lowercase alphabet characters in the result. Default value is `true`.
 
@@ -1510,10 +1510,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `number`<sup>Optional</sup> <a name="number" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.number"></a>
 
 ```python
-number: typing.Union[bool, IResolvable]
+number: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -1526,10 +1526,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `numeric`<sup>Optional</sup> <a name="numeric" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.numeric"></a>
 
 ```python
-numeric: typing.Union[bool, IResolvable]
+numeric: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include numeric characters in the result.
 
@@ -1558,10 +1558,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `special`<sup>Optional</sup> <a name="special" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.special"></a>
 
 ```python
-special: typing.Union[bool, IResolvable]
+special: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 
@@ -1572,10 +1572,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `upper`<sup>Optional</sup> <a name="upper" id="@cdktf/provider-random.stringResource.StringResourceConfig.property.upper"></a>
 
 ```python
-upper: typing.Union[bool, IResolvable]
+upper: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include uppercase alphabet characters in the result. Default value is `true`.
 
